@@ -8,6 +8,9 @@ package MicroDomain;
 import DataAccessLayer.ManufacturingDBA;
 import MicroException.RecordsNotFoundException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -19,11 +22,11 @@ import javax.persistence.Id;
 @Entity
 public class Manufacturing implements Serializable{
     @Id
-    @Column(name="MICROAREANAME")
+    @Column(name="MICROPOLITIANAREA")
     public String strMicroArea;
      @Column(name="STATENAME")
     public String strStateName;
-      @Column(name="AREACODE")
+      @Column(name="MICROPOLITIANAREACODE")
     public int areaCode;
        @Column(name="YEARS")
     public int  years;
@@ -125,5 +128,24 @@ public class Manufacturing implements Serializable{
     public void fetchMfgData(String strMicroAreaName) throws RecordsNotFoundException{
         ManufacturingDBA.findMfgDetails(strMicroArea);
     }
-    
+    public List<Map<Object,Object>> fetchDataQ1(String strMicroAreaName) throws RecordsNotFoundException{
+        List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
+        list = ManufacturingDBA.findPittsDataQ1(strMicroArea);
+        return list;
+    }
+    public List<Map<Object,Object>> fetchDataQ2(String strMicroAreaName) throws RecordsNotFoundException{
+        List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
+        list = ManufacturingDBA.findPittsDataQ2(strMicroArea);
+        return list;
+    }
+    public List<Map<Object,Object>> fetchDataQ3(String strMicroAreaName) throws RecordsNotFoundException{
+        List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
+        list = ManufacturingDBA.findPittsDataQ3(strMicroArea);
+        return list;
+    }
+    public List<Map<Object,Object>> fetchDataQ4(String strMicroAreaName) throws RecordsNotFoundException{
+        List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
+        list = ManufacturingDBA.findPittsDataQ4(strMicroArea);
+        return list;
+    }
 }

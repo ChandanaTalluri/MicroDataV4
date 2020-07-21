@@ -6,10 +6,12 @@
 package servlet;
 
 import MicroDomain.Manufacturing;
+import MicroDomain.TotalCovered;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -35,20 +37,20 @@ public class MfgServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
                     Manufacturing objMFG = new Manufacturing();
-            String url = "/login.html";
+            String url = "/index.html";
             HttpSession session = request.getSession();
                
            try{
              
-               String userID = request.getParameter("userID");
-               String password = request.getParameter("strPassword");
-               System.out.println("userID in servelet"+userID);
+                String strArea = "Pittsburg";
+              
               session.setAttribute("message", "");
-              session.setAttribute("mfgName", userID);
-          
-             objMFG.fetchMfgData(userID);
-               
-               session.setAttribute("customer", objMFG);
+              session.setAttribute("mfgName", strArea);
+             
+           
+              List strData = objMFG.fetchDataQ1(strArea);
+              
+               session.setAttribute("mfg", objMFG);
 
               
                 // set User object in request object and set URL*/
@@ -58,7 +60,7 @@ public class MfgServlet extends HttpServlet {
             .getRequestDispatcher(url)
             .forward(request, response);
            }catch(Exception e){
-               url = "/login.jsp"; 
+               url = "/index.html"; 
                request.setAttribute("message", e.getMessage());
               // HttpSession session = request.getSession();
                session.setAttribute("message", e.getMessage());
