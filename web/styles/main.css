@@ -32,23 +32,7 @@ h2 {
 h3 {     
     color: yellow;  
 }
-label {
-    float: left;
-    width: 7em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-}
 
 br {
     clear: both;
-}
-
-
-.dollar:before{content:'$';}
-
-
-#home {
-  left: 0px;
-  width: 46px;
-  background: url('./images/excelimg.png') 0 0;
 }

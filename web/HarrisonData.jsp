@@ -17,7 +17,7 @@
 Gson gsonObj = new Gson();
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
 Manufacturing objMfg = new Manufacturing();
-list = objMfg.fetchDataQ1("Pittsburg");
+list = objMfg.fetchDataQ1("Harrison");
 String dataPoints1 = gsonObj.toJson(list);
 
 List<Map<Object,Object>> list2 = new ArrayList<Map<Object,Object>>();
@@ -49,7 +49,7 @@ window.onload = function() {
 var chart = new CanvasJS.Chart("chartContainer", {
 	theme: "light2",
 	title: {
-		text: "Jobs in Pittsburg Micropolitain Area"
+		text: "Jobs in Harrison Micropolitain Area"
 	},
 	axisX: {
 		title: "Year"
@@ -150,11 +150,11 @@ function toogleDataSeries(e){
          <div class= "row">
               <div class="col-md-2"></div>
             <div class="col-md-8">
-               <h2>Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2>    
+               <h2>Employment trends in Manufacturing at Harrison Microplolitian Area, Kansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-                <p><a href="excelfiles/Manufacturing_Pittsburg.xlsx"> Micro Area data Excel file</a></p>
+                <p><a href="excelfiles/Manufacturing_Harrison.xlsx"> Micro Area data Excel file</a></p>
                 
             </div>
             

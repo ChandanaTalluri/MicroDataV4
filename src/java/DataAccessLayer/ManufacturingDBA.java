@@ -62,7 +62,7 @@ public class ManufacturingDBA {
            
             String sql = "Select c.years ,c.Q1 " 
                     + " from Manufacturing c  where c.strMicroArea = :u";
-            strAreaName = "Pittsburg";
+            //strAreaName = "Pittsburg";
                  TypedQuery strQuery  = objEntity.createQuery(sql,Manufacturing.class);
              strQuery.setParameter("u", strAreaName);
             
@@ -102,7 +102,7 @@ public class ManufacturingDBA {
            
             String sql = "Select c.years ,c.Q2 " 
                     + " from Manufacturing c  where c.strMicroArea = :u";
-            strAreaName = "Pittsburg";
+           // strAreaName = "Pittsburg";
                  TypedQuery strQuery  = objEntity.createQuery(sql,Manufacturing.class);
              strQuery.setParameter("u", strAreaName);
             
@@ -142,7 +142,7 @@ public class ManufacturingDBA {
            
             String sql = "Select c.years ,c.Q3 " 
                     + " from Manufacturing c  where c.strMicroArea = :u";
-            strAreaName = "Pittsburg";
+            //strAreaName = "Pittsburg";
                  TypedQuery strQuery  = objEntity.createQuery(sql,Manufacturing.class);
              strQuery.setParameter("u", strAreaName);
             
@@ -182,7 +182,7 @@ public class ManufacturingDBA {
            
             String sql = "Select c.years ,c.Q4 " 
                     + " from Manufacturing c  where c.strMicroArea = :u";
-            strAreaName = "Pittsburg";
+            //strAreaName = "Pittsburg";
                  TypedQuery strQuery  = objEntity.createQuery(sql,Manufacturing.class);
              strQuery.setParameter("u", strAreaName);
             

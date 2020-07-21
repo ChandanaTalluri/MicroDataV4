@@ -126,26 +126,26 @@ public class Manufacturing implements Serializable{
     }
     
     public void fetchMfgData(String strMicroAreaName) throws RecordsNotFoundException{
-        ManufacturingDBA.findMfgDetails(strMicroArea);
+        ManufacturingDBA.findMfgDetails(strMicroAreaName);
     }
     public List<Map<Object,Object>> fetchDataQ1(String strMicroAreaName) throws RecordsNotFoundException{
         List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-        list = ManufacturingDBA.findPittsDataQ1(strMicroArea);
+        list = ManufacturingDBA.findPittsDataQ1(strMicroAreaName);
         return list;
     }
     public List<Map<Object,Object>> fetchDataQ2(String strMicroAreaName) throws RecordsNotFoundException{
         List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-        list = ManufacturingDBA.findPittsDataQ2(strMicroArea);
+        list = ManufacturingDBA.findPittsDataQ2(strMicroAreaName);
         return list;
     }
     public List<Map<Object,Object>> fetchDataQ3(String strMicroAreaName) throws RecordsNotFoundException{
         List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-        list = ManufacturingDBA.findPittsDataQ3(strMicroArea);
+        list = ManufacturingDBA.findPittsDataQ3(strMicroAreaName);
         return list;
     }
     public List<Map<Object,Object>> fetchDataQ4(String strMicroAreaName) throws RecordsNotFoundException{
         List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-        list = ManufacturingDBA.findPittsDataQ4(strMicroArea);
+        list = ManufacturingDBA.findPittsDataQ4(strMicroAreaName);
         return list;
     }
 }
