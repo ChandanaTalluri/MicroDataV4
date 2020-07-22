@@ -2,7 +2,7 @@
 <html>
     
     <head>  
-    <title>Micropolitan Area </title>
+    <title>Micropolitan Area Payroll</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="styles/main.css"></script>
@@ -10,7 +10,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </head>
     
 <body>   
@@ -43,7 +42,7 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact US</a></li>
       </ul>
-        <form class="navbar-form navbar-left" action="MfgServlet">
+              <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
         <input type="text" class="form-control" name="searchtext" placeholder="Search">
       </div>
@@ -60,80 +59,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="index.html"><h2> Total Employment trends in Micropolitian Area </h2>  </a>
-                <script src="scripts/main.js"></script>
-            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-            
-            <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
-            <a href="excelfiles/TC_Yearly.xlsx" download>
-                 Download
-            </a>
-            <br>
-            </div>
-        </div>
-        
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-                <a href="index.html"><h2> Employment trends in Manufacturing in Micropolitian Area </h2>  </a>
-                <script src="scripts/main.js"></script>
-            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-            
-            <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
-            <a href="excelfiles/TC_Yearly.xlsx" download>
-                 Download
-            </a>
-            <br>
-            </div>
-        </div>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
             <a href="PittsburgData.jsp"><h2>Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
-             <script src="scripts/toalMfg.js"></script>    
-            <p>
-                    Can write some story about the pittsburg data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="HarrisonData.jsp"><h2>Employment trends in Manufacturing at Harrison Microplolitian Area, Arkansas</h2></a>
-                <p>
-                    Can write some story about the Harrison data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="PittPayroll.jsp"><h2>Payroll trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
-                <p>
-                    Can write some story about the pittsburg data 
-                </p>
-            </div>    
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="HarrisonPayroll.jsp"><h2>Payroll trends in Manufacturing at Harrison Microplolitian Area, Arkansas</h2></a>
-                <p>
-                    Can write some story about the Harrison data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="PittWages.jsp"><h2>Wages trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
                 <p>
                     Can write some story about the pittsburg data 
                 </p>
@@ -144,7 +70,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonWages.jsp"><h2>Wages trends in Manufacturing at Harrison Microplolitian Area, Arkansas</h2></a>
+            <a href="HarrisonData.jsp"><h2>Employment trends in Manufacturing at Harrison, Arkansas</h2></a>
                 <p>
                     Can write some story about the Harrison data 
                 </p>
@@ -152,6 +78,29 @@
             </div>    
         </div>
         <br>
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="PittsburgData.jsp"><h2>Payroll trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="HarrisonData.jsp"><h2>Payroll trends in Manufacturing at Harrison, Arkansas</h2></a>
+                <p>
+                    Can write some story about the Harrison data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
+    
 </body>
 </html>
 

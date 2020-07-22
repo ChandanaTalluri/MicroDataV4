@@ -4,7 +4,7 @@
     Author     : 0809379
 --%>
 
-<%@page import="MicroDomain.Manufacturing"%>
+<%@page import="MicroDomain.PayrollMfg"%>
 <%@page import="java.util.HashMap"%>
 <%@page import="java.util.Map"%>
 <%@page import="java.util.List"%>
@@ -16,20 +16,21 @@
 <%
 Gson gsonObj = new Gson();
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-Manufacturing objMfg = new Manufacturing();
-list = objMfg.fetchDataQ1("Harrison");
+PayrollMfg objMfg = new PayrollMfg();
+String areaName = "Pittsburg";
+list = objMfg.fetchDataQ1(areaName);
 String dataPoints1 = gsonObj.toJson(list);
 
 List<Map<Object,Object>> list2 = new ArrayList<Map<Object,Object>>();
-list2 = objMfg.fetchDataQ2("Pittsburg");
+list2 = objMfg.fetchDataQ2(areaName);
 String dataPoints2 = gsonObj.toJson(list2);
 
 List<Map<Object,Object>> list3 = new ArrayList<Map<Object,Object>>();
-list3 = objMfg.fetchDataQ3("Pittsburg");
+list3 = objMfg.fetchDataQ3(areaName);
 String dataPoints3 = gsonObj.toJson(list3);
 
 List<Map<Object,Object>> list4 = new ArrayList<Map<Object,Object>>();
-list4 = objMfg.fetchDataQ4("Pittsburg");
+list4 = objMfg.fetchDataQ4(areaName);
 String dataPoints4 = gsonObj.toJson(list4);
 %>
  
@@ -49,14 +50,14 @@ window.onload = function() {
 var chart = new CanvasJS.Chart("chartContainer", {
 	theme: "light2",
 	title: {
-		text: "Jobs in Harrison Micropolitain Area"
+		text: "Payroll in Pittsburg Micropolitain Area"
 	},
 	axisX: {
 		title: "Year",
                 valueFormatString:  "####"  
 	},
 	axisY: {
-		title: "Manufacturing Jobs"
+		title: "Payroll in millions"
 	},
         toolTip: {
 		shared: true
@@ -132,7 +133,7 @@ function toogleDataSeries(e){
         <li><a href="#">About</a></li>
         <li><a href="#">Contact US</a></li>
       </ul>
-    <form class="navbar-form navbar-left" action="MfgServlet">
+               <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
         <input type="text" class="form-control" name="searchtext" placeholder="Search">
       </div>
@@ -151,13 +152,13 @@ function toogleDataSeries(e){
          <div class= "row">
               <div class="col-md-2"></div>
             <div class="col-md-8">
-               <h2>Employment trends in Manufacturing at Harrison Microplolitian Area, Kansas</h2>    
+               <h2>Payroll trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
                
                 <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
-            <a href="excelfiles/Manufacturing_Harrison.xlsx" download>
+            <a href="excelfiles/MFG_PayRoll_PittsBurg&Harrison-A.xlsx" download>
                  Download
             </a>
             </div>

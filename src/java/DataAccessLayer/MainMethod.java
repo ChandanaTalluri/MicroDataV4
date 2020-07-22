@@ -14,7 +14,11 @@ import MicroException.RecordsNotFoundException;
  */
 public class MainMethod {
     public static void main (String[] args) throws RecordsNotFoundException{
-        ManufacturingDBA objTC = new ManufacturingDBA();
-        objTC.findPittsDataQ1("Pittsburg");
+       // ManufacturingDBA objTC = new ManufacturingDBA();
+        //objTC.findPittsDataQ1("Pittsburg");
+    //YearlyDataDBA objDBA = new YearlyDataDBA();
+    String strData  = YearlyDataDBA.find_MFG_JobsData();
+    
+    
     }
 }

@@ -36,26 +36,23 @@ public class MfgServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-                    Manufacturing objMFG = new Manufacturing();
+            
             String url = "/index.html";
             HttpSession session = request.getSession();
                
            try{
-             
-                String strArea = "Pittsburg";
+             String strtext = request.getParameter("searchtext");
+             strtext = strtext.toLowerCase();
+             if(strtext.contains("job")||strtext.contains("emp")||strtext.contains("pitt")||strtext.contains("Har")){
+                 url = "/AllJobs.jsp";
+             } 
+             if(strtext.contains("pay")){
+                 url = "/AllPayroll.jsp";
+             }
+             session.setAttribute("searchtext", "");
               
-              session.setAttribute("message", "");
-              session.setAttribute("mfgName", strArea);
-             
-           
-              List strData = objMFG.fetchDataQ1(strArea);
-              
-               session.setAttribute("mfg", objMFG);
-
-              
-                // set User object in request object and set URL*/
+            // set User object in request object and set URL*/
             
-           
             getServletContext()
             .getRequestDispatcher(url)
             .forward(request, response);

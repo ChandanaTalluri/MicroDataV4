@@ -40,7 +40,7 @@ public class TotalCoveredDBA {
                     int years = (int) objArray[0];
                     float jobs = (float) objArray[1];
                    objHmp.put(years,jobs);
-                strData = strData+ "{lable: "+ years + ",y:"+  jobs +"},";
+                strData = strData+ "{x: "+ years + ",y:"+  jobs +"},";
             }
              strDatalist = strData.substring(0, strData.length() - 1);      
         

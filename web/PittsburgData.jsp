@@ -52,10 +52,11 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		text: "Jobs in Pittsburg Micropolitain Area"
 	},
 	axisX: {
-		title: "Year"
+		title: "Year",
+                valueFormatString:  "####"  
 	},
 	axisY: {
-		title: "Jobs"
+		title: "Manufacturing Jobs"
 	},
         toolTip: {
 		shared: true
@@ -122,18 +123,18 @@ function toogleDataSeries(e){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Micropolitan Area Jobs</a>
+      <a class="navbar-brand" href="#">Micropolitan Area </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         
         <li><a href="#">About</a></li>
         <li><a href="#">Contact US</a></li>
       </ul>
-        <form class="navbar-form navbar-left" action="Mfgservlet">
+               <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" name="searchtext" placeholder="Search">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
@@ -154,8 +155,12 @@ function toogleDataSeries(e){
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-                <p><a href="excelfiles/Manufacturing_Pittsburg.xlsx"> Micro Area data Excel file</a></p>
                 
+                <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
+            <a href="excelfiles/Manufacturing_Pittsburg.xlsx" download>
+                 Download
+            </a>
+            <br>
             </div>
             
         </div>
