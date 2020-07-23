@@ -42,8 +42,10 @@ String dataPoints4 = gsonObj.toJson(list4);
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+               
 <script type="text/javascript">
-    
+     
 window.onload = function() { 
  
 var chart = new CanvasJS.Chart("chartContainer", {
@@ -151,12 +153,11 @@ function toogleDataSeries(e){
          <div class= "row">
               <div class="col-md-2"></div>
             <div class="col-md-8">
-               <h2>Employment trends in Manufacturing at Harrison Microplolitian Area, Kansas</h2>    
+               <h2 class="text-primary">Employment trends in Manufacturing at Harrison Microplolitian Area, Kansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-               
-                <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
+                 
+                <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
             <a href="excelfiles/Manufacturing_Harrison.xlsx" download>
                  Download
             </a>

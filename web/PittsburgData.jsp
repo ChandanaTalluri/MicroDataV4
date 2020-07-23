@@ -151,12 +151,14 @@ function toogleDataSeries(e){
          <div class= "row">
               <div class="col-md-2"></div>
             <div class="col-md-8">
-               <h2>Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2>    
+                <p class="titleColor">
+               <h2 class="text-primary">Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2>   
+               </p>
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
                 
-                <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
+                <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
             <a href="excelfiles/Manufacturing_Pittsburg.xlsx" download>
                  Download
             </a>

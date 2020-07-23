@@ -60,6 +60,16 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
+                <a href="TotalMFG.jsp"><h2> Employment trends in Manufacturing in Micropolitian Area </h2>  </a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
             <a href="PittsburgData.jsp"><h2>Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
                 <p>
                     Can write some story about the pittsburg data 

@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="scripts/main.js"></script>
     </head>
     
 <body>   
@@ -27,8 +28,8 @@
      
         <br>
       
-   <nav class="navbar navbar-inverse">  <div class="container-fluid">
-    <div class="navbar-header">
+   <nav class="navbar navbar-inverse bg-primary" >  <div class="container-fluid">
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -40,8 +41,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
         
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact US</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact US</a></li>
       </ul>
         <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
@@ -56,15 +57,16 @@
     </div>
   </div>
 </nav>
+
  <br>
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="index.html"><h2> Total Employment trends in Micropolitian Area </h2>  </a>
-                <script src="scripts/main.js"></script>
+                <a href="index.html"><h2> Employment trends in Micropolitian Area </h2>  </a>
+                
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
             
-            <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
+            <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
             <a href="excelfiles/TC_Yearly.xlsx" download>
                  Download
             </a>
@@ -75,14 +77,10 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="index.html"><h2> Employment trends in Manufacturing in Micropolitian Area </h2>  </a>
-                <script src="scripts/main.js"></script>
-            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-            
-            <img src="images/excelimg.png" alt="W3Schools" width="25" height="25">
-            <a href="excelfiles/TC_Yearly.xlsx" download>
-                 Download
-            </a>
+                <a href="TotalMFG.jsp"><h2> Employment trends in Manufacturing in Micropolitian Area </h2>  </a>
+                <p>
+                    Can write some story about the Harrison data 
+                </p>
             <br>
             </div>
         </div>
@@ -90,7 +88,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-8">
             <a href="PittsburgData.jsp"><h2>Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
-             <script src="scripts/toalMfg.js"></script>    
+             
             <p>
                     Can write some story about the pittsburg data 
                 </p>

@@ -49,6 +49,9 @@ public class MfgServlet extends HttpServlet {
              if(strtext.contains("pay")){
                  url = "/AllPayroll.jsp";
              }
+             if(strtext.contains("wag")){
+                 url = "/AllWages.jsp";
+             }
              session.setAttribute("searchtext", "");
               
             // set User object in request object and set URL*/
