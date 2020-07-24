@@ -59,6 +59,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	axisY: {
 		title: "Average Monthly Wages",
+                valueFormatString:  "$#,###"  
 	},
         toolTip: {
 		shared: true
@@ -130,9 +131,8 @@ function toogleDataSeries(e){
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact US</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact US</a></li>
       </ul>
                <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
@@ -152,8 +152,8 @@ function toogleDataSeries(e){
  
          <div class= "row">
               <div class="col-md-2"></div>
-            <div class="col-md-8">
-               <h2 class="text-primary" >Wages in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2>    
+            <div class="col-md-9">
+               <h2 class="text-primary" >Wages in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

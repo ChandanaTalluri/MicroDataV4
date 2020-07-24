@@ -3,7 +3,7 @@
 <html>
     
     <head>  
-    <title>Micropolitan Area Jobs</title>
+    <title>Total MFG Jobs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="styles/main.css"></script>
@@ -40,9 +40,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact US</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact US</a></li>
       </ul>
                 <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
@@ -61,7 +60,7 @@
  <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="index.html"><h2> Employment trends in Manufacturing in Micropolitian Area </h2>  </a>
+                <a href="index.html"><h3> Employment trends in Manufacturing, Micropolitan Areas </h3>  </a>
                 
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
             
@@ -77,7 +76,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="PittsburgData.jsp"><h2>Employment trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
+            <a href="PittsburgData.jsp"><h3>Employment trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
                 <p>
                     Can write some story about the pittsburg data 
                 </p>
@@ -88,7 +87,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonData.jsp"><h2>Employment trends in Manufacturing at Harrison, Arkansas</h2></a>
+            <a href="HarrisonData.jsp"><h3>Employment trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
                 <p>
                     Can write some story about the Harrison data 
                 </p>

@@ -6,7 +6,10 @@
 package MicroDomain;
 
 import DataAccessLayer.TotalCoveredDBA;
+import DataAccessLayer.YearlyDataDBA;
 import java.io.Serializable;
+import static java.util.Collections.list;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -50,5 +53,11 @@ public class YearlyData  implements Serializable{
     }
     public String getData(){
        return TotalCoveredDBA.findTCData();
-    }     
+    } 
+    public List fetchTotalMFGPayroll(){
+        return YearlyDataDBA.find_MFG_PayrollData();
+    }
+     public List fetchTotalMFGWages(){
+        return YearlyDataDBA.find_MFG_WagesData();
+    }
 }

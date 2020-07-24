@@ -38,9 +38,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact US</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact US</a></li>
       </ul>
         <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
@@ -56,11 +55,10 @@
   </div>
 </nav>
  <br>
-        
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="PittPayroll.jsp"><h2>Payroll trends in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
+            <a href="TotalMFGPayroll.jsp"><h3>Total Manufacturing Payroll in Microplolitian Areas</h3></a>
                 <p>
                     Can write some story about the pittsburg data 
                 </p>
@@ -71,7 +69,18 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonData.jsp"><h2>Payroll trends in Manufacturing at Harrison Microplolitian Area, Arkansas</h2></a>
+            <a href="PittPayroll.jsp"><h3>Payroll trends in Manufacturing in the Pittsburg Microplolitian Area, Kansas</h3></a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="HarrisonData.jsp"><h3>Payroll trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
                 <p>
                     Can write some story about the Harrison data 
                 </p>

@@ -7,6 +7,7 @@ package DataAccessLayer;
 
 import MicroDomain.TotalCovered;
 import MicroException.RecordsNotFoundException;
+import java.util.List;
 
 /**
  *
@@ -17,7 +18,7 @@ public class MainMethod {
        // ManufacturingDBA objTC = new ManufacturingDBA();
         //objTC.findPittsDataQ1("Pittsburg");
     //YearlyDataDBA objDBA = new YearlyDataDBA();
-    String strData  = YearlyDataDBA.find_MFG_JobsData();
+   List list   = YearlyDataDBA.find_MFG_PayrollData();
     
     
     }

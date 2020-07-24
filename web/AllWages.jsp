@@ -2,7 +2,7 @@
 <html>
     
     <head>  
-    <title>Micropolitan Area </title>
+    <title>Wages Micropolitan Area </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="styles/main.css"></script>
@@ -40,9 +40,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact US</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact US</a></li>
       </ul>
         <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
@@ -58,11 +57,22 @@
   </div>
 </nav>
  <br>
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="totalMFGWages.jsp"><h3>Total Manufacturing Wages in Micropolitan Areas</h3></a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
         
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="PittWages.jsp"><h2>Wages in Manufacturing at Pittsburg Microplolitian Area, Kansas</h2></a>
+            <a href="PittWages.jsp"><h3>Wages in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
                 <p>
                     Can write some story about the pittsburg data 
                 </p>
@@ -73,7 +83,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonWages.jsp"><h2>Wages in Manufacturing at Harrison Microplolitian Area, Arkansas</h2></a>
+            <a href="HarrisonWages.jsp"><h3>Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
                 <p>
                     Can write some story about the Harrison data 
                 </p>
