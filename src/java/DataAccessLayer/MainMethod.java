@@ -5,7 +5,7 @@
  */
 package DataAccessLayer;
 
-import MicroDomain.TotalCovered;
+
 import MicroException.RecordsNotFoundException;
 import java.util.List;
 

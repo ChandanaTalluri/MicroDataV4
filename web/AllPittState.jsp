@@ -2,7 +2,7 @@
 <html>
     
     <head>  
-    <title>Micropolitan Area Jobs</title>
+    <title>Micropolitan Area Payroll</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="styles/main.css"></script>
@@ -44,7 +44,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
-                <form class="navbar-form navbar-left" action="MfgServlet">
+              <form class="navbar-form navbar-left" action="MfgServlet">
       <div class="form-group">
         <input type="text" class="form-control" name="searchtext" placeholder="Search">
       </div>
@@ -58,27 +58,6 @@
   </div>
 </nav>
  <br>
-        
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-                <a href="TotalJobs.jsp"><h3> Employment trends Micropolitan Area </h3>  </a>
-                <p>
-                    Can write some story about the pittsburg data 
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-                <a href="TotalMFG.jsp"><h3> Employment trends in Manufacturing in Micropolitan Area </h3>  </a>
-                <p>
-                    Can write some story about the pittsburg data 
-                </p>
-            </div>
-        </div>
-        <br>
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
@@ -89,19 +68,31 @@
                 
             </div>    
         </div>
+        
         <br>
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonData.jsp"><h3>Employment trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
+            <a href="PittsburgData.jsp"><h3>Payroll trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
                 <p>
-                    Can write some story about the Harrison data 
+                    Can write some story about the pittsburg data 
                 </p>
                 
             </div>    
         </div>
+        
         <br>
-    
+         <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="PittWages.jsp"><h3>Wages in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+                
+            </div>    
+        </div>
+        
 </body>
 </html>
 

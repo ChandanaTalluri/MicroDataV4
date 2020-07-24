@@ -33,9 +33,10 @@ String dataPoints1 = gsonObj.toJson(list);
 window.onload = function() { 
  
 var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: "Total Manufacturing Wages"
+		//text: "Total Manufacturing Wages"
 	},
 	axisX: {
 		title: "Year",
@@ -44,9 +45,6 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	axisY: {
 		title: "Wages",
                 valueFormatString:  "$#,###"  
-	},
-        toolTip: {
-		shared: true
 	},
 	data: [{
 		type: "line",
@@ -84,6 +82,9 @@ chart.render();
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
+         <li><a href="AllJobs.jsp">Jobs</a></li>
+         <li><a href="AllPayroll.jsp">Payroll</a></li>
+         <li><a href="AllWages.jsp">Wages</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -107,9 +108,10 @@ chart.render();
                 <a href="totalMFGWages.jsp"><h3> Total Manufacturing Wages in Micropolitan Areas </h3>  </a>
                 
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-            
+             <h5>Source:Quarterly Census of Employment and Wages</h5>
+                <br>
             <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
-            <a href="excelfiles/TC_Yearly.xlsx" download>
+            <a href="excelfiles/Jobs,Payroll,Wages Yearly.xlsx" download>
                  Download
             </a>
             <br>
@@ -117,29 +119,6 @@ chart.render();
         </div>
         <br>
         
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="PittWages.jsp"><h3>Wages in Manufacturing at Pittsburg Micropolitan Area, Kansas</h3></a>
-                <p>
-                    Can write some story about the pittsburg data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="HarrisonWages.jsp"><h3>Wages in Manufacturing at Harrison Micropolitan Area, Arkansas</h3></a>
-                <p>
-                    Can write some story about the Harrison data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-    
 </body>
 </html>
 

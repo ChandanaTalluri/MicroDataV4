@@ -43,6 +43,7 @@ String dataPoints4 = gsonObj.toJson(list4);
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
     
 window.onload = function() { 
@@ -50,7 +51,7 @@ window.onload = function() {
 var chart = new CanvasJS.Chart("chartContainer", {
 	theme: "light2",
 	title: {
-		text: "Payroll in Pittsburg Micropolitain Area"
+		
 	},
 	axisX: {
 		title: "Year",
@@ -129,7 +130,9 @@ function toogleDataSeries(e){
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
+        <li><a href="AllJobs.jsp">Jobs</a></li>
+         <li><a href="AllPayroll.jsp">Payroll</a></li>
+         <li><a href="AllWages.jsp">Wages</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -150,13 +153,14 @@ function toogleDataSeries(e){
  
  
          <div class= "row">
-              <div class="col-md-2"></div>
+              <div class="col-md-1"></div>
             <div class="col-md-9">
-               <h2 class="text-primary">Payroll trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h2>    
+               <h2 >Payroll trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-               
+                   
+                     <h5>Source:Quarterly Census of Employment and Wages</h5>
+                <br>
                 <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
             <a href="excelfiles/MFG_PayRoll_PittsBurg&Harrison-A.xlsx" download>
                  Download

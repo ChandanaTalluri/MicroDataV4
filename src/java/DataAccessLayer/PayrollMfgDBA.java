@@ -5,9 +5,8 @@
  */
 package DataAccessLayer;
 
-import MicroDomain.Manufacturing;
+
 import MicroDomain.PayrollMfg;
-import MicroDomain.TotalCovered;
 import MicroException.RecordsNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;

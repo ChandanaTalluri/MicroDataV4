@@ -6,7 +6,6 @@
 package DataAccessLayer;
 
 import MicroDomain.Manufacturing;
-import MicroDomain.TotalCovered;
 import MicroException.RecordsNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;

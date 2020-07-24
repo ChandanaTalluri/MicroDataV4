@@ -10,13 +10,13 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Total Manufacturing Jobs in Micropolitian Areas"
+		//text: "Total Manufacturing Jobs in Micropolitian Areas"
 	},
         axisX:{
         title : "Year"
         },
         axisY:{
-        title : "Jobs"
+        title : "Manufacturing Jobs"
         },
 	
 	data: [{        

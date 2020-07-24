@@ -5,10 +5,8 @@
  */
 package MicroDomain;
 
-import DataAccessLayer.TotalCoveredDBA;
 import DataAccessLayer.YearlyDataDBA;
 import java.io.Serializable;
-import static java.util.Collections.list;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -31,9 +29,9 @@ public class YearlyData  implements Serializable{
     @Column(name="MFG_Jobs")
     public float MFG_Jobs;
     @Column(name="TC_Payroll")
-    public float TC_Payroll;
+    public double TC_Payroll;
     @Column(name="MFG_Payroll")
-    public float MFG_Payroll;
+    public double MFG_Payroll;
     @Column(name="TC_Wages")
     public float TC_Wages;
     @Column(name="MFG_Wages")
@@ -51,13 +49,16 @@ public class YearlyData  implements Serializable{
         this.TC_Wages = TC_Wages;
         this.MFG_Wages = MFG_Wages;
     }
-    public String getData(){
-       return TotalCoveredDBA.findTCData();
-    } 
     public List fetchTotalMFGPayroll(){
         return YearlyDataDBA.find_MFG_PayrollData();
     }
      public List fetchTotalMFGWages(){
         return YearlyDataDBA.find_MFG_WagesData();
+    }
+      public List fetchTotalPayroll(){
+        return YearlyDataDBA.find_Total_PayrollData();
+    }
+        public List fetchTotalWages(){
+        return YearlyDataDBA.find_Total_WagesData();
     }
 }

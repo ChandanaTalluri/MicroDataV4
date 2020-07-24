@@ -38,7 +38,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
+        <li><a href="AllJobs.jsp">Jobs</a></li>
+         <li><a href="AllPayroll.jsp">Payroll</a></li>
+         <li><a href="AllWages.jsp">Wages</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -100,7 +102,28 @@
             </div>    
         </div>
         <br>
-    
+         <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="PittWages.jsp"><h3>Wages in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="HarrisonWages.jsp"><h3>Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
+                <p>
+                    Can write some story about the Harrison data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
 </body>
 </html>
 

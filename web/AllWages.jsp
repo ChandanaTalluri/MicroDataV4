@@ -40,6 +40,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="AllJobs.jsp">Jobs</a></li>
+         <li><a href="AllPayroll.jsp">Payroll</a></li>
+         <li><a href="AllWages.jsp">Wages</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -56,6 +59,17 @@
     </div>
   </div>
 </nav>
+ <br>
+    <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+            <a href="TotalWages.jsp"><h3>Total Wages in Microplolitian Areas</h3></a>
+                <p>
+                    Can write some story about the pittsburg data 
+                </p>
+                
+            </div>    
+        </div>
  <br>
         <div class= "row">
             <div class="col-md-1"></div>

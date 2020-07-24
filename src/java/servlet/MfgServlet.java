@@ -5,13 +5,8 @@
  */
 package servlet;
 
-import MicroDomain.Manufacturing;
-import MicroDomain.TotalCovered;
+
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -43,7 +38,7 @@ public class MfgServlet extends HttpServlet {
            try{
              String strtext = request.getParameter("searchtext");
              strtext = strtext.toLowerCase();
-             if(strtext.contains("job")||strtext.contains("emp")||strtext.contains("pitt")||strtext.contains("Har")){
+             if(strtext.contains("job")||strtext.contains("emp")){
                  url = "/AllJobs.jsp";
              } 
              if(strtext.contains("pay")){
@@ -53,7 +48,15 @@ public class MfgServlet extends HttpServlet {
                  url = "/AllWages.jsp";
              }
              session.setAttribute("searchtext", "");
-              
+             if(strtext.contains("pitt")|| strtext.contains("kan")){
+                 url = "/AllPittState.jsp";
+             } 
+             if(strtext.contains("har") || strtext.contains("arkan")){
+                 url = "/AllHarrison.jsp";
+             } 
+             if(strtext.contains("sta")){
+                 url = "/Statewide.jsp";
+             } 
             // set User object in request object and set URL*/
             
             getServletContext()

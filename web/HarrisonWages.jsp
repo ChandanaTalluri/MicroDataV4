@@ -131,7 +131,9 @@ function toogleDataSeries(e){
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        
+        <li><a href="AllJobs.jsp">Jobs</a></li>
+         <li><a href="AllPayroll.jsp">Payroll</a></li>
+         <li><a href="AllWages.jsp">Wages</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -152,9 +154,9 @@ function toogleDataSeries(e){
  
  
          <div class= "row">
-              <div class="col-md-2"></div>
+              <div class="col-md-1"></div>
             <div class="col-md-9">
-               <h2 class="text-primary">Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h2>    
+               <h2>Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

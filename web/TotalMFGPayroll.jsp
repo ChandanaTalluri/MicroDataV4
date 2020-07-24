@@ -29,32 +29,32 @@ String dataPoints1 = gsonObj.toJson(list);
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
-    
-window.onload = function() { 
- 
+window.onload = function () {
+
 var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
 	theme: "light2",
-	title: {
-		text: "Total Manufacturing Payroll"
+	title:{
+		//text: "Total Manufacturing Payroll"
 	},
-	axisX: {
-		title: "Year",
-                valueFormatString:  "####"  
-	},
-	axisY: {
-		title: "Payroll"
-	},
-        toolTip: {
-		shared: true
-	},
-        
-	data: [{
+        axisX:{
+                title: "Year",
+                valueFormatString:  "####" 
+        },
+ 
+        axisY:{
+                title : "Payroll"
+        },
+	
+	data: [{        
 		type: "line",
+      	indexLabelFontSize: 16,
 		dataPoints : <%out.print(dataPoints1);%>
-	} ]
+	}]
 });
 chart.render();
 }
+ 
 </script>
 </head>
 <body>   
@@ -83,6 +83,9 @@ chart.render();
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="AllJobs.jsp">Jobs</a></li>
+         <li><a href="AllPayroll.jsp">Payroll</a></li>
+         <li><a href="AllWages.jsp">Wages</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -100,43 +103,21 @@ chart.render();
   </div>
 </nav>
  <br>
+        
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="TotalMFGPayroll.jsp"><h3>Total Manufacturing Payroll in Microplolitian Areas</h3></a>
+            <a href="TotalMFGPayroll.jsp"><h3>Total Manufacturing Payroll in Micropolitan Areas</h3></a>
                 
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
             
             <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
-            <a href="excelfiles/TC_Yearly.xlsx" download>
+            <a href="excelfiles/Jobs,Payroll,Wages Yearly.xlsx" download>
                  Download
             </a>
             </div>    
         </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="PittPayroll.jsp"><h3>Payroll trends in Manufacturing in the Pittsburg Microplolitian Area, Kansas</h3></a>
-                <p>
-                    Can write some story about the pittsburg data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-        <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-            <a href="HarrisonData.jsp"><h3>Payroll trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
-                <p>
-                    Can write some story about the Harrison data 
-                </p>
-                
-            </div>    
-        </div>
-        <br>
-    
+        
 </body>
 </html>
 
