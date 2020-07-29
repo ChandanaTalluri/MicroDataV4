@@ -4,9 +4,17 @@
         <servlet-name>MfgServlet</servlet-name>
         <servlet-class>servlet.MfgServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Projections</servlet-name>
+        <servlet-class>servlet.Projections</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MfgServlet</servlet-name>
         <url-pattern>/MfgServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Projections</servlet-name>
+        <url-pattern>/Projections</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

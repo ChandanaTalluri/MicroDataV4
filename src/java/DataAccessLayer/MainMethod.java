@@ -18,7 +18,7 @@ public class MainMethod {
        // ManufacturingDBA objTC = new ManufacturingDBA();
         //objTC.findPittsDataQ1("Pittsburg");
     //YearlyDataDBA objDBA = new YearlyDataDBA();
-   List list   = YearlyDataDBA.find_MFG_PayrollData();
+   List list   = MA_Names_DBA.findData();
     
     
     }
