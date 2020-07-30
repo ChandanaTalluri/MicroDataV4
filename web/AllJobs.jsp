@@ -14,18 +14,15 @@
     
 <body>   
     
-    
-    <div class= "row">
+   <div class= "row">
             <div class="col-md-4"></div>
             <div class="col-md-8">
                 <div class="container">
-                    <img src="images/College logo.png" class="mx-auto d-block" style="width:25%" alt="College logo"> 
+                    <img src="images/CollegeName1.png" class="mx-auto d-block" style="width:30%" alt="College logo"> 
                 </div>   
             </div>
     </div>
-     
-        <br>
-      
+    
 <nav class="navbar navbar-inverse bg-primary" >  <div class="container-fluid">
     <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -70,7 +67,7 @@
             <div class="col-md-8">
                 <a href="TotalJobs.jsp"><h3> Employment trends Micropolitan Area </h3>  </a>
                 <p>
-                    Can write some story about the pittsburg data 
+                    Can write some story about the  data 
                 </p>
             </div>
         </div>
@@ -80,7 +77,7 @@
             <div class="col-md-8">
                 <a href="TotalMFG.jsp"><h3> Employment trends in Manufacturing in Micropolitan Area </h3>  </a>
                 <p>
-                    Can write some story about the pittsburg data 
+                    Can write some story about the  data 
                 </p>
             </div>
         </div>

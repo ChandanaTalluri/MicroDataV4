@@ -15,11 +15,12 @@ import java.util.List;
  */
 public class MainMethod {
     public static void main (String[] args) throws RecordsNotFoundException{
-       // ManufacturingDBA objTC = new ManufacturingDBA();
+        ManufacturingDBA objTC = new ManufacturingDBA();
         //objTC.findPittsDataQ1("Pittsburg");
     //YearlyDataDBA objDBA = new YearlyDataDBA();
-   List list   = MA_Names_DBA.findData();
-    
+    objTC.findPittsDataQ1("Pittsburg");
+    objTC.findPittsDataQ1("Harrison");
+   
     
     }
 }

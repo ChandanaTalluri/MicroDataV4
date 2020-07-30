@@ -105,17 +105,15 @@ function toogleDataSeries(e){
 </script>
 </head>
 <body>
-    <div class= "row">
+     <div class= "row">
             <div class="col-md-4"></div>
             <div class="col-md-8">
                 <div class="container">
-                    <img src="images/College logo.png" class="mx-auto d-block" style="width:25%" alt="College logo"> 
+                    <img src="images/CollegeName1.png" class="mx-auto d-block" style="width:30%" alt="College logo"> 
                 </div>   
             </div>
     </div>
     
-        
-        <br>
         
 <nav class="navbar navbar-inverse bg-primary" >  <div class="container-fluid">
     <div class="navbar-header" >
@@ -159,7 +157,7 @@ function toogleDataSeries(e){
  
          <div class= "row">
               <div class="col-md-1"></div>
-            <div class="col-md-8">
+            <div class="col-md-9">
                <h2>Payroll trends in Manufacturing in the Harrison Micropolitan Area, Kansas</h2>    
                <br>
                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>

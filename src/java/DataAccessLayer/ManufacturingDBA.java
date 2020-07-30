@@ -51,12 +51,12 @@ public class ManufacturingDBA {
         return objMfg;
     }
     public static List findPittsDataQ1(String strAreaName) {
-        Manufacturing objMfg = new Manufacturing();
+       // Manufacturing objMfg = new Manufacturing();
          EntityManager objEntity = EstablishDataConnection.getEntityManager().createEntityManager();
-        HashMap objHmp = new HashMap();
+        //HashMap objHmp = new HashMap();
         List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-        String strData = "";
-        String strDatalist = null;
+       // String strData = "";
+        //String strDatalist = null;
         try{
            
             String sql = "Select c.years ,c.Q1 " 
@@ -70,7 +70,7 @@ public class ManufacturingDBA {
                 Object[] objArray = (Object[])objList.get(i);
                     int years = (int) objArray[0];
                     int Q1 = (int) objArray[1];
-                strData = strData+ "{x: "+ years + ",y:"+  Q1 +"},";
+               // strData = strData+ "{x: "+ years + ",y:"+  Q1 +"},";
                 Map<Object,Object> map = null;
                 
             map = new HashMap<Object,Object>(); 
@@ -78,9 +78,9 @@ public class ManufacturingDBA {
             map.put("y", Q1);
             list.add(map);
             }
-             strDatalist = strData.substring(0, strData.length() - 1);      
+           //  strDatalist = strData.substring(0, strData.length() - 1);      
         
-        System.out.println(strDatalist);
+      // System.out.println(strDatalist);
           
         }catch(Exception e){
             System.out.println(e.getMessage());

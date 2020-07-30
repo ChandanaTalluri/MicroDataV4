@@ -17,19 +17,20 @@
 Gson gsonObj = new Gson();
 List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
 Manufacturing objMfg = new Manufacturing();
-list = objMfg.fetchDataQ1("Harrison");
+String areaName = "Harrison";
+list = objMfg.fetchDataQ1(areaName);
 String dataPoints1 = gsonObj.toJson(list);
 
 List<Map<Object,Object>> list2 = new ArrayList<Map<Object,Object>>();
-list2 = objMfg.fetchDataQ2("Pittsburg");
+list2 = objMfg.fetchDataQ2(areaName);
 String dataPoints2 = gsonObj.toJson(list2);
 
 List<Map<Object,Object>> list3 = new ArrayList<Map<Object,Object>>();
-list3 = objMfg.fetchDataQ3("Pittsburg");
+list3 = objMfg.fetchDataQ3(areaName);
 String dataPoints3 = gsonObj.toJson(list3);
 
 List<Map<Object,Object>> list4 = new ArrayList<Map<Object,Object>>();
-list4 = objMfg.fetchDataQ4("Pittsburg");
+list4 = objMfg.fetchDataQ4(areaName);
 String dataPoints4 = gsonObj.toJson(list4);
 %>
  
@@ -42,10 +43,9 @@ String dataPoints4 = gsonObj.toJson(list4);
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-               
+   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
-     
+    
 window.onload = function() { 
  
 var chart = new CanvasJS.Chart("chartContainer", {
@@ -54,8 +54,8 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		//text: "Jobs in Harrison Micropolitan Area"
 	},
 	axisX: {
-		title: "Year",
-                valueFormatString:  "####"  
+                title: "Year",
+                valueFormatString:  "####" 
 	},
 	axisY: {
 		title: "Manufacturing Jobs"
@@ -106,17 +106,15 @@ function toogleDataSeries(e){
 </script>
 </head>
 <body>
-    <div class= "row">
+      <div class= "row">
             <div class="col-md-4"></div>
             <div class="col-md-8">
                 <div class="container">
-                    <img src="images/College logo.png" class="mx-auto d-block" style="width:25%" alt="College logo"> 
+                    <img src="images/CollegeName1.png" class="mx-auto d-block" style="width:30%" alt="College logo"> 
                 </div>   
             </div>
     </div>
     
-        
-        <br>
         
 <nav class="navbar navbar-inverse bg-primary" >  <div class="container-fluid">
     <div class="navbar-header" >

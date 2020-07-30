@@ -107,17 +107,14 @@ function toogleDataSeries(e){
 </script>
 </head>
 <body>
-    <div class= "row">
+      <div class= "row">
             <div class="col-md-4"></div>
             <div class="col-md-8">
                 <div class="container">
-                    <img src="images/College logo.png" class="mx-auto d-block" style="width:25%" alt="College logo"> 
+                    <img src="images/CollegeName1.png" class="mx-auto d-block" style="width:30%" alt="College logo"> 
                 </div>   
             </div>
     </div>
-    
-        
-        <br>
         
  <nav class="navbar navbar-inverse bg-primary" >  <div class="container-fluid">
     <div class="navbar-header" >
