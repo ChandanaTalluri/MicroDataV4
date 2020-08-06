@@ -112,7 +112,7 @@ function toogleDataSeries(e){
                 </div>   
             </div>
     </div>
-  <nav class="navbar navbar-inverse bg-primary" >  <div class="container-fluid">
+  <nav class="navbar navbar-inverse " >  <div class="container-fluid">
     <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -131,8 +131,16 @@ function toogleDataSeries(e){
          <li><a href="AllJobs.jsp">Jobs</a></li>
          <li><a href="AllPayroll.jsp">Payroll</a></li>
          <li><a href="AllWages.jsp">Wages</a></li>
-         <li><a href="Studies.html">Studies</a></li>
-         <li><a href="Projections.html">Projections</a></li>
+         <li class="nav-item dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Additional <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Population</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Unemployment</a></li>
+                 </ul>
+        </li>
+          <li><a href="Projections.html">Projections</a></li>
+           <li><a href="Studies.html">Studies</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact US</a></li>
       </ul>
@@ -149,6 +157,7 @@ function toogleDataSeries(e){
     </div>
   </div>
 </nav>
+
  <br>
  
  
