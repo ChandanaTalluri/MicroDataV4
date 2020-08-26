@@ -1,23 +1,47 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : PittsburgData
+    Created on : Jul 20, 2020, 9:38:13 AM
+    Author     : 0809379
+--%>
+
+
+<!DOCTYPE HTML>
 <html>
-    
-    <head>  
-    <title>Micropolitan Area </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="styles/main.css"></script>
-        
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <script src="styles/main.css"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<style>
+#MA_NAmes {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-    </head>
-    
-<body>   
-    
-   <div class= "row">
+#MA_NAmes td, #MA_NAmes th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+#MA_NAmes tr:nth-child(even){background-color: #f2f2f2;}
+
+#MA_NAmes tr:hover {background-color: #ddd;}
+
+#MA_NAmes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: darkcyan;
+  color: white;
+}
+</style>
+</head>
+<body>
+      <div class= "row">
             <div class="col-md-4"></div>
             <div class="col-md-8">
                 <div class="container">
@@ -25,8 +49,6 @@
                 </div>   
             </div>
     </div>
-    
-      
   <nav class="navbar navbar-inverse " >  <div class="container-fluid">
     <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -73,40 +95,41 @@
   </div>
 </nav>
 
-
- <br>
+  <br>
        <div class= "row">
-            <div class="col-md-3"></div>
-            <div class="col-md-4">
-                    <h2 class="text-primary"> List of all Micropolitan Area</h2>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3>Employment in all Micropolitan Areas</h3>
+                <table id="MA_NAmes">
+                    <tr>
+                     
+                     <th>Micropolitan Area</th>
+                     <th> State Name </th>
+                     <th> Micropolitan Area Code</th>
+                     <th> 1990 </th>
+                     <th> 2000 </th>
+                     <th> 2019 </th>
                     
-                    <p style ="font-family: Arial; font-size:15px;">According to 2003 definition there are 554 Micropolitan areas excluding Puerto Rico in USA</p>
-            </div>
-            <div class="col-md-4">
-                <br>
-                <form action="Projections" method="post">
-                    <button class="btn btn-primary">View Table</button>
-                </form>
+                     </tr>
+                  <c:forEach var="TC_Data" items="${TC_Data}">   
+                     
+                    <tr>
+                    <td>${TC_Data.strMicro_area_name}</td>
+                    
+                    <td>${TC_Data.strState_Name}</td>
+                    
+                    <td>${TC_Data.str_Micro_Code}</td>
+                    
+                    <td>${TC_Data.jobs_1990}</td>
+                    
+                    <td>${TC_Data.jobs_2000}</td>
+                    
+                    <td>${TC_Data.jobs_2019}</td>
+                   
+                    </tr>
+                   </c:forEach>
+            </table>
             </div>
        </div>
-        <br>
- 
-        <div class= "row">
-            <div class="col-md-3"></div>
-            <div class="col-md-4">
-                    <h2 class="text-primary"> Employment in all Micropolitan Areas (according to 2003 definition)</h2>
-                    
-                    <p style ="font-family: Arial; font-size:15px;">
-                       19.0% for Job growth is observed from the year 1990-2000 and 27% from 1990-2019
-       
-                    </p>
-            </div>
-            <div class="col-md-4">
-                <br>
-                <form action="TotalCovered_MicroData" method="post">
-                    <button class="btn btn-primary">View Table</button>
-                </form>
-            </div>
-       </div> 
 </body>
 </html>
