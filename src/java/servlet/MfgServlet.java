@@ -57,6 +57,10 @@ public class MfgServlet extends HttpServlet {
              if(strtext.contains("sta")){
                  url = "/Statewide.jsp";
              } 
+              if(strtext.contains("micro")){
+                 url = "/MicroData_TC.html";
+             }
+             
             // set User object in request object and set URL*/
             
             getServletContext()

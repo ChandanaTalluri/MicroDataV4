@@ -40,9 +40,30 @@ public class TotalCovered_MicroData extends HttpServlet {
             Micro_TotalCovered objMA = new Micro_TotalCovered();
             
             session.setAttribute("TC_Data", "");
+             session.setAttribute("type", "");
            try{
                System.out.println("entered servlet");
-              onjArr = objMA.fecth_TC_Jobs();
+                String type = request.getParameter("Jobs");
+                
+                onjArr = objMA.fecth_TC_Jobs();
+               type = request.getParameter("Payroll");
+              
+                if(type!="" && type!=null){
+                     if(type.equalsIgnoreCase("payroll")){
+                    onjArr = new ArrayList();
+                    onjArr = objMA.fecth_TC_Payroll();
+                     }
+                }
+                type = request.getParameter("Wages");
+                System.out.println("Jobs fetched: "+type);
+                if(type!="" && type!=null){
+                    if(type.equalsIgnoreCase("wages")){
+                        onjArr = new ArrayList();
+                    onjArr = objMA.fecth_TC_Wages();
+                    }
+                     
+                }
+              session.setAttribute("type", type);
                session.setAttribute("TC_Data", onjArr);
              url = "/All_Micro_TC_Jobs.jsp";
             getServletContext()

@@ -148,5 +148,13 @@ public class Micro_TotalCovered implements Serializable{
        return Micro_TC_DBA.find_TC_Jobs_Data();
        
    }
+   public static ArrayList<Micro_TotalCovered> fecth_TC_Payroll(){
+       return Micro_TC_DBA.find_TC_Payroll_Data();
+       
+   }
+   public static ArrayList<Micro_TotalCovered> fecth_TC_Wages(){
+       return Micro_TC_DBA.find_TC_Wages_Data();
+       
+   }
            
 }
