@@ -44,9 +44,15 @@ public class TotalCovered_MicroData extends HttpServlet {
            try{
                System.out.println("entered servlet");
                 String type = request.getParameter("Jobs");
+                if(type==null || type==""){
+                    type = request.getParameter("Payroll");
+                }
+                 if(type==null || type==""){
+                     type = request.getParameter("Wages");
+                }
                 
                 onjArr = objMA.fecth_TC_Jobs();
-               type = request.getParameter("Payroll");
+              
               
                 if(type!="" && type!=null){
                      if(type.equalsIgnoreCase("payroll")){
@@ -54,7 +60,7 @@ public class TotalCovered_MicroData extends HttpServlet {
                     onjArr = objMA.fecth_TC_Payroll();
                      }
                 }
-                type = request.getParameter("Wages");
+               
                 System.out.println("Jobs fetched: "+type);
                 if(type!="" && type!=null){
                     if(type.equalsIgnoreCase("wages")){
