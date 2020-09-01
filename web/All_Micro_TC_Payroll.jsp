@@ -122,7 +122,10 @@
                     });
 
                 </script>
-                
+                <style>
+                    .dollar:before{content: '$'}
+                </style>
+
                 <table id="MA_NAmes" class="display" style="width:100%" >
 
                     <thead>
@@ -144,31 +147,34 @@
                         </tr>
                     </thead>
                     <tbody>
-                      
-                            <p>Below is the Jobs data for all micropolitan areas</p>
-                            <c:forEach var="TC_Data" items="${TC_Data}">   
-
-                                <tr>
-                                    <td>${TC_Data.strMicro_area_name}</td>
-
-                                    <td>${TC_Data.strState_Name}</td>
-
-                                    <td>${TC_Data.str_Micro_Code}</td>
-
-                                    <td>
-                                        <fmt:setLocale value = "en_US"/>
-                                        <fmt:formatNumber value = "${TC_Data.jobs_1990}" type = "number"/></td>
-                                    <td>
-                                        <fmt:setLocale value = "en_US"/>
-                                        <fmt:formatNumber value = "${TC_Data.jobs_2000}" type = "number"/></td>
-                                    <td>
-                                        <fmt:setLocale value = "en_US"/>
-                                        <fmt:formatNumber value = "${TC_Data.jobs_2019}" type = "number"/></td>
 
 
-                                </tr>
-                            </c:forEach>
-                     
+                    <p>Below is the Payroll data for all micropolitan areas</p>
+
+                    <c:forEach var="TC_Data" items="${TC_Data}">   
+
+                        <tr>
+                            <td>${TC_Data.strMicro_area_name}</td>
+
+                            <td>${TC_Data.strState_Name}</td>
+
+                            <td>${TC_Data.str_Micro_Code}</td>
+
+
+                            <td class="dollar">
+                                <fmt:setLocale value = "en_US"/>
+                                <fmt:formatNumber value = "${TC_Data.jobs_1990}" type = "number"/></td>
+                            <td class="dollar">
+                                <fmt:setLocale value = "en_US"/>
+                                <fmt:formatNumber value = "${TC_Data.jobs_2000}" type = "number"/></td>
+                            <td class="dollar">
+                                <fmt:setLocale value = "en_US"/>
+                                <fmt:formatNumber value = "${TC_Data.jobs_2019}" type = "number"/></td>
+
+                        </tr>
+                    </c:forEach>
+
+
                     </tbody>
 
 

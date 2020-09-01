@@ -31,3 +31,5 @@ h3 {
 br {
     clear: both;
 }
+
+ .dollar:before{content: '$'}

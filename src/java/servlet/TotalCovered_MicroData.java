@@ -44,34 +44,35 @@ public class TotalCovered_MicroData extends HttpServlet {
            try{
                System.out.println("entered servlet");
                 String type = request.getParameter("Jobs");
-                if(type==null || type==""){
-                    type = request.getParameter("Payroll");
-                }
-                 if(type==null || type==""){
-                     type = request.getParameter("Wages");
-                }
-                
                 onjArr = objMA.fecth_TC_Jobs();
-              
-              
+                 url = "/All_Micro_TC_Jobs.jsp";
+                if(type==null || type==""){
+                type = request.getParameter("Payroll");
                 if(type!="" && type!=null){
                      if(type.equalsIgnoreCase("payroll")){
                     onjArr = new ArrayList();
                     onjArr = objMA.fecth_TC_Payroll();
+                    url = "/All_Micro_TC_Payroll.jsp";
                      }
                 }
-               
-                System.out.println("Jobs fetched: "+type);
+                }
+                if(type==null || type==""){
+                type = request.getParameter("Wages");
                 if(type!="" && type!=null){
                     if(type.equalsIgnoreCase("wages")){
                         onjArr = new ArrayList();
                     onjArr = objMA.fecth_TC_Wages();
-                    }
-                     
+                     url = "/All_Micro_TC_Wages.jsp";
+                    }    
+                }
+                }
+                  if(type==null || type==""){
+                     type = "Jobs";
+                     url = "/All_Micro_TC_Jobs.jsp";
                 }
               session.setAttribute("type", type);
                session.setAttribute("TC_Data", onjArr);
-             url = "/All_Micro_TC_Jobs.jsp";
+            
             getServletContext()
             .getRequestDispatcher(url)
             .forward(request, response);
