@@ -62,12 +62,8 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <h3>Employment in all 554 Micropolitan Areas (2003 definition)</h3>
-                <form action="TotalCovered_MicroData" method="post">
-                    <button class="btn btn-primary" name ="Jobs" value="Jobs">Jobs</button>
-                    <button class="btn btn-primary" name ="Payroll" value="Payroll">Payroll</button>
-                    <button class="btn btn-primary" name ="Wages" value="Wages">Wages</button>
-                </form>
+                <h3>Jobs in all 554 Micropolitan Areas (2003 definition)</h3>
+               
                 <br>
                 <script>
                     $(document).ready(function () {
@@ -101,7 +97,7 @@
                     </thead>
                     <tbody>
 
-                    <p>Below is the Jobs data for all micropolitan areas</p>
+                   <!-- <p>Below is the Jobs data for all micropolitan areas</p>-->
                     <c:forEach var="TC_Data" items="${TC_Data}">   
 
                         <tr>
@@ -130,7 +126,10 @@
 
                 </table>
                 <br>
-
+                <br>
+                <br>
+                
+                
             </div>
         </div>
     </body>

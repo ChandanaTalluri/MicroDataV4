@@ -51,7 +51,7 @@ $(function(){
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonWages.jsp"><h3>Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
+            <a href="HarrisonWages.jsp"><h3>Average Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
                 <p>
                     Can write some story about the Harrison data 
                 </p>

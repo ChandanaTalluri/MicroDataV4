@@ -6,88 +6,77 @@ and open the template in the editor.
 -->
 <html>
     <head>
-      
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Micropolitan Area</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
     </head>
-    <body>
-        <div id="nav-placeholder"></div>
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("importNavHome.html");
-});
-</script>
-<div style="background-color: lightgray">
-            <p class="marquee">
-                <span id="headline">
-                    Of the 756 students tested for COVID-19 at Pittsburg State University in the past few weeks as part of a move-in process required by the county of those planning to live in residence halls, 15 were positive, or 1.98 percent, the university announced Tuesday.
-                </span>
-            </p>
-        </div>
-        
+    <body >
+        <style>
+            body{
+                background-color:lightgray ;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                -o-background-size: cover;
+
+            }
+
+        </style>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
         <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-0.5">
+
+                <img src="images/GorillaLogo.png" class="img-fluid" width="75" height="90" alt="College logo"> 
+
+            </div>
+            <div class="col-sm-7">
+                <h1 style="font-size:400%">Pittsburg State University</h1>
+            </div>
+
+        </div>
+        <br>
+
+        <div class= "row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-9">
                 <h3 class="text-danger"><em>Welcome to the center of Micropolitan Statistical Areas Data Center and Study Depot</em></h3>
-
-            </div>
-            <div></div>
+            </div>            
         </div>
+        <br>
         <div class= "row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5" style="background-color:lightyellow">
-                <a href="images/micropolitan-statistical-areas-small-town-america-image-1.jpg" download><h3 class="text-primary">Micropolitan Statistical Areas Map</h3></a>
-
-                <img src="images/micropolitan-statistical-areas-small-town-america-image-1.jpg" class="mx-auto d-block" style="width:90%" alt="MicropolitanAreaMap">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5">
+                <img src="images/US_Map.png" class="img-fluid"  alt="US map"> 
             </div>
-            <div class="col-md-5" style="background-color:linen">
-
-                <h3>Census Snapshot 1990</h3>
-
-                <a href="excelfiles/Census 2000 MD add to BM-E.xlsx" download> <h3 class="text-primary">Census Snapshot 2000</h3>
-                </a>   
-                <img src="images/CensusSnapShot_1.PNG" class="mx-auto d-block" style="width:90%" alt="MicropolitanAreaMap">
-                <h3>Census Snapshot 2010</h3>
-                <br>
-                <br>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div style="background-color:lightgray">
-            <div class="container" >
-            <div class="row">
-                <div class="clo-md-4">
-                    <h4><b>Research</b></h4>
-
-                    <h5><a href="https://www.pittstate.edu/business/journals/economic-development/index.html">Pittsburg Micropolitan Area Economic Report and Data</a></h5>
-                </div>
-                <div class="clo-md-3">
-                    <h4><b>Address</b></h4>
-                    <h5><span class="glyphicon glyphicon-map-marker"></span>1701 South Broadway Street, Pittsburg KS, 66762</h5>
-
-                </div>
-                <div class="clo-md-4">
-                    <h4><b>Contact</b></h4>
-
-                    <h5>Business and Economic Research Center</h5>
-
-                    <h5> <span class="glyphicon glyphicon-earphone"></span>(620) 235-4592</h5>
-                </div>
-            </div>
+            <div class="col-sm-4">
+                <a href="HomePage.html"><h4>2003 Delineation</h4></a>
+                <h4>2010 Delineation</h4>
+                <h4>2012 Delineation</h4>
+                <h4>2019 Delineation</h4>
+                <h5 class="text-danger">Login for Full access </h5>
                 
-
-            </div>
+    <form class="form-inline" action="MfgServlet">
+         <button class="btn btn btn-outline-primary" type="submit">Sign Up</button>
+         <br>
+       <button class="btn btn btn-outline-primary" type="submit">Login</button>
+      
+    </form>
+            </div>            
         </div>
 
     </body>

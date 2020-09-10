@@ -60,7 +60,12 @@ public class MfgServlet extends HttpServlet {
               if(strtext.contains("micro")){
                  url = "/MicroData_TC.html";
              }
-             
+             if(strtext.contains("retail")){
+                 url = "/retailSales.html";
+             }
+             if(strtext.contains("sales")){
+                 url = "/retailSales.html";
+             }
             // set User object in request object and set URL*/
             
             getServletContext()

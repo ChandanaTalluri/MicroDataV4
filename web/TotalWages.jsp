@@ -68,13 +68,13 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="TotalWages.jsp"><h3> Total Wages in Micropolitan Areas </h3>  </a>
+                <a href="TotalWages.jsp"><h3> Average Wages in Micropolitan Areas </h3>  </a>
 
                 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                 <h5>Source:Quarterly Census of Employment and Wages</h5>
                 <br>
                 <img src="images/excelimg.png" alt="excel-icon" width="25" height="25">
-                <a href="excelfiles/Jobs,Payroll,Wages Yearly.xlsx" download>
+                <a href="excelfiles/Wages_TC.xlsx" download>
                     Download
                 </a>
                 <br>

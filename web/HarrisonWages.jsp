@@ -122,8 +122,8 @@
 
         <div class= "row">
             <div class="col-md-1"></div>
-            <div class="col-md-9">
-                <h2>Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h2>    
+            <div class="col-md-10">
+                <h2>Average Wages in Manufacturing in the Harrison Micropolitan Area, Arkansas</h2>    
                 <br>
                 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

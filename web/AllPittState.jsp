@@ -47,7 +47,7 @@ $(function(){
          <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="PittWages.jsp"><h3>Wages in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
+            <a href="PittWages.jsp"><h3>Average Wages in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
                 <p>
                     Can write some story about the pittsburg data 
                 </p>
