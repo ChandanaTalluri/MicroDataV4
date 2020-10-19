@@ -30,7 +30,7 @@ public class LoginAccess extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-       String url = "../index.html";
+       String url = "/index.html";
             HttpSession session = request.getSession();
                
            try{
@@ -39,10 +39,10 @@ public class LoginAccess extends HttpServlet {
               String strDataType = request.getParameter("dataType");
              
               if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("census")){
-                  url = "/censusData/CensusHomePage.html";
+                  url = "/CensusHomePage.html";
               }
               if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("others")){
-                  url = "/HomePage.html";
+                  url = "/OtherDataHomePage.html";
               }
              
             // set User object in request object and set URL*/
@@ -51,7 +51,7 @@ public class LoginAccess extends HttpServlet {
             .getRequestDispatcher(url)
             .forward(request, response);
            }catch(Exception e){
-               url = "../index.html"; 
+               url = "/index.html"; 
                request.setAttribute("message", e.getMessage());
               // HttpSession session = request.getSession();
                session.setAttribute("message", e.getMessage());
