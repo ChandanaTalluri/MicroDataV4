@@ -59,25 +59,48 @@ and open the template in the editor.
         </div>
         <br>
         <div class= "row">
-            <div class="col-sm-3"></div>
+            <div class="col-sm-2"></div>
             <div class="col-sm-5">
                 <img src="images/US_Map.png" class="img-fluid"  alt="US map"> 
             </div>
             <div class="col-sm-4">
-                <a href="HomePage1.html"><h4>2003 Delineation</h4></a>
-                <h4>2010 Delineation</h4>
-                <h4>2012 Delineation</h4>
-                <h4>2019 Delineation</h4>
-                <h5 class="text-danger">Login for Full access </h5>
-                
-    <form class="form-inline" action="MfgServlet">
-         <button class="btn btn btn-outline-primary" type="submit">Sign Up</button>
-         <br>
-       <button class="btn btn btn-outline-primary" type="submit">Login</button>
-      
-    </form>
-            </div>            
-        </div>
+                <form action="loginAccess" method="POST" class="form-group">
+
+                    <label for="delineation">Select Delineation</label>
+                    <select class="custom-select" id="delineation" name="delineation" required>
+                        <option value="2003" >2003 Delineation</option>
+                        <option value="2010" >2010 Delineation</option>
+                        <option value="2012" >2012 Delineation</option>
+                        <option value="2019" >2019 Delineation</option>
+                    </select>
+                    <br>
+                    <label for="delineation">Select Data Source</label>
+                    <select class="custom-select" name="dataType" required>
+                        <option value="census" >Census</option>
+                        <option value="others" >Other</option>
+
+                    </select>
+                    <br>
+
+                    <br>
+                    <button class="btn  btn-primary" type="submit">Submit</button>
+
+                </form>
+            </div>
+
+            <br>
+
+            <br>
+
+            <!-- <h5 class="text-danger">Login for Full access </h5>
+
+             <form class="form-inline" action="MfgServlet">
+                 <button class="btn btn btn-outline-primary" type="submit">Sign Up</button>
+                 <br>
+                 <button class="btn btn btn-outline-primary" type="submit">Login</button>
+
+             </form>-->
+        </div>            
 
     </body>
 </html>

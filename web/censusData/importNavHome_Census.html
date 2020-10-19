@@ -2,10 +2,10 @@
 
 <div class= "row">
     <div class="col-sm-7">
-        <img src="images/CollegeLogo2_1.PNG" class="img-fluid"  alt="College logo"> 
+        <img src="../images/CollegeLogo2_1.PNG" class="img-fluid"  alt="College logo"> 
     </div>
     <div class="col-sm-5">
-        <img src="images/kelce.PNG" class="img-fluid" width="530" height="90" alt="College logo"> 
+        <img src="../images/kelce.PNG" class="img-fluid" width="530" height="90" alt="College logo"> 
     </div>
 </div>
 
@@ -29,56 +29,41 @@
 
 
 <nav id="navbar_top" class="navbar navbar-expand-lg  navbar-dark bg-dark">
-    <a class="navbar-brand"  href="index.html"><span>Home</span></a>
+    <a class="navbar-brand"  href="../index.html"><span>Home</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="AllJobs.jsp">Jobs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="AllPayroll.jsp">Payroll</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="AllWages.jsp">Wages</a>
-            </li>
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
                     Additional
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Earnings</a>
-                    <a class="dropdown-item" href="#">Personal Income</a>
-                    <a class="dropdown-item" href="#">Unemployment</a>
+                    <a class="dropdown-item" href="#">Population</a>
+                    <a class="dropdown-item" href="#">Education</a>
+                    <a class="dropdown-item" href="#">Housing</a>
+                    <a class="dropdown-item" href="#">Crimes</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Projections.html">Projections</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Studies.html">Studies</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact US</a>
-            </li>
-            <li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="./StudiesCensus.html">Studies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./aboutCensus.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contactCensus.html">Contact US</a>
             </li>
         </ul>
-        <form class="form-inline" action="MfgServlet">
+        <form class="form-inline" >
             <div class="form-group">
                 <input type="text" id="searchLength" class="form-control" name="searchtext" placeholder="Search">
             </div>
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
 
-        </form>  
-
+        </form>
     </div>
 </nav>

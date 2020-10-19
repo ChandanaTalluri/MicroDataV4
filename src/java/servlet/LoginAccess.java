@@ -5,7 +5,6 @@
  */
 package servlet;
 
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,9 +14,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Chandana
+ * @author 0809379
  */
-public class MfgServlet extends HttpServlet {
+public class LoginAccess extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,58 +30,28 @@ public class MfgServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-            
-            String url = "/index.html";
+       String url = "../index.html";
             HttpSession session = request.getSession();
                
            try{
               String strDelineation = request.getParameter("delineation");
-              strDelineation ="2003";
+              
               String strDataType = request.getParameter("dataType");
-              strDataType = "census";
+             
               if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("census")){
-                  url = "/CensusHomePage.html";
+                  url = "/censusData/CensusHomePage.html";
               }
               if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("others")){
                   url = "/HomePage.html";
               }
-             String strtext = request.getParameter("searchtext");
-             strtext = strtext.toLowerCase();
-             if(strtext.contains("job")||strtext.contains("emp")){
-                 url = "/AllJobs.jsp";
-             } 
-             if(strtext.contains("pay")){
-                 url = "/AllPayroll.jsp";
-             }
-             if(strtext.contains("wag")){
-                 url = "/AllWages.jsp";
-             }
-             session.setAttribute("searchtext", "");
-             if(strtext.contains("pitt")|| strtext.contains("kan")){
-                 url = "/AllPittState.jsp";
-             } 
-             if(strtext.contains("har") || strtext.contains("arkan")){
-                 url = "/AllHarrison.jsp";
-             } 
-             if(strtext.contains("sta")){
-                 url = "/Statewide.jsp";
-             } 
-              if(strtext.contains("micro")){
-                 url = "/MicroData_TC.html";
-             }
-             if(strtext.contains("retail")){
-                 url = "/retailSales.html";
-             }
-             if(strtext.contains("sales")){
-                 url = "/retailSales.html";
-             }
+             
             // set User object in request object and set URL*/
             
             getServletContext()
             .getRequestDispatcher(url)
             .forward(request, response);
            }catch(Exception e){
-               url = "/index.html"; 
+               url = "../index.html"; 
                request.setAttribute("message", e.getMessage());
               // HttpSession session = request.getSession();
                session.setAttribute("message", e.getMessage());
