@@ -6,6 +6,7 @@
 package servlet;
 
 
+import com.sun.xml.internal.ws.util.StringUtils;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -47,6 +48,10 @@ public class MfgServlet extends HttpServlet {
                   url = "/HomePage.html";
               }
              String strtext = request.getParameter("searchtext");
+             if(strtext==null||strtext=="" ){
+                   url = "/index.html";
+             }
+             else{
              strtext = strtext.toLowerCase();
              if(strtext.contains("job")||strtext.contains("emp")){
                  url = "/AllJobs.jsp";
@@ -75,6 +80,7 @@ public class MfgServlet extends HttpServlet {
              }
              if(strtext.contains("sales")){
                  url = "/retailSales.html";
+             }
              }
             // set User object in request object and set URL*/
             
