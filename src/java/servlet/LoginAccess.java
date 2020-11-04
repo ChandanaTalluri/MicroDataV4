@@ -30,38 +30,45 @@ public class LoginAccess extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-       String url = "/index.html";
-            HttpSession session = request.getSession();
-               
-           try{
-              String strDelineation = request.getParameter("delineation");
-              
-              String strDataType = request.getParameter("dataType");
-              
-              String microType = request.getParameter("microType");
-             
-               System.out.println("microType");
-              if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("census")){
-                  url = "/CensusHomePage.html";
-              }
-              if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("others")){
-                  url = "/OtherDataHomePage.html";
-              }
-             
+        String url = "/index.html";
+        HttpSession session = request.getSession();
+
+        try {
+            String strDelineation = request.getParameter("delineation");
+
+            String strDataType = request.getParameter("dataType");
+
+            String microType = request.getParameter("microType");
+
+            System.out.println(microType);
+            if (strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("census")) {
+                if (microType.equalsIgnoreCase("byMicro")) {
+                    url = "/CensusByMicro.html";
+                } else {
+                    url = "/CensusHomePage.html";
+                }
+            }
+            if (strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("others")) {
+                if (microType.equalsIgnoreCase("byMicro")) {
+                    url = "/OtherDataByMicroHome.html";
+                } else {
+                    url = "/OtherDataHomePage.html";
+                }
+            }
+
             // set User object in request object and set URL*/
-            
             getServletContext()
-            .getRequestDispatcher(url)
-            .forward(request, response);
-           }catch(Exception e){
-               url = "/index.html"; 
-               request.setAttribute("message", e.getMessage());
-              // HttpSession session = request.getSession();
-               session.setAttribute("message", e.getMessage());
-               getServletContext()
-            .getRequestDispatcher(url)
-            .forward(request, response);
-           }
+                    .getRequestDispatcher(url)
+                    .forward(request, response);
+        } catch (Exception e) {
+            url = "/index.html";
+            request.setAttribute("message", e.getMessage());
+            // HttpSession session = request.getSession();
+            session.setAttribute("message", e.getMessage());
+            getServletContext()
+                    .getRequestDispatcher(url)
+                    .forward(request, response);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
