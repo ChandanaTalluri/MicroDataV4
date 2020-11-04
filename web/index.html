@@ -74,12 +74,21 @@ and open the template in the editor.
                         <option value="2019" disabled>2019 Delineation</option>
                     </select>
                     <br>
-                    <label for="delineation">Select Data Source</label>
+                    <label for="dataSource">Select Data Source</label>
                     <select class="custom-select" name="dataType" required>
                         <option value="census" >Census</option>
                         <option value="others" >Other</option>
 
                     </select>
+                    <br>
+                    <div class="form-check radio-inline">
+                        <input class="form-check-input" type="radio" name="microType" id="byMicro"  value="byMicro" checked>
+                        <label class="form-check-label" for="byMicro">By Micropolitan Area</label>
+                    </div>
+                    <div class="form-check radio-inline">
+                        <input class="form-check-input" type="radio" name="microType" id="allMicro"  value="allMicro">
+                        <label class="form-check-label" for="allMicro"> All Micro's </label>
+                    </div>
                     <br>
 
                     <br>

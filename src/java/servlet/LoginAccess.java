@@ -37,7 +37,10 @@ public class LoginAccess extends HttpServlet {
               String strDelineation = request.getParameter("delineation");
               
               String strDataType = request.getParameter("dataType");
+              
+              String microType = request.getParameter("microType");
              
+               System.out.println("microType");
               if(strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("census")){
                   url = "/CensusHomePage.html";
               }

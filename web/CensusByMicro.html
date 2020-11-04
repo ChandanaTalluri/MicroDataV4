@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Census Data</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../styles/main.css" type="text/css"/>
+    </head>
+    <body>
+        
+
+<div class= "row">
+    <div class="col-sm-7">
+        <img src="./images/CollegeLogo2_1.PNG" class="img-fluid"  alt="College logo"> 
+    </div>
+    <div class="col-sm-5">
+        <img src="./images/kelce.PNG" class="img-fluid" width="530" height="90" alt="College logo"> 
+    </div>
+</div>
+
+
+<script>
+    if ($(window).width() > 992) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 40) {
+                $('#navbar_top').addClass("fixed-top");
+                // add padding top to show content behind navbar
+                $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+            } else {
+                $('#navbar_top').removeClass("fixed-top");
+                // remove padding top from body
+                $('body').css('padding-top', '0');
+            }
+        });
+    }
+
+</script>
+
+
+<nav id="navbar_top" class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <a class="navbar-brand"  href="index.html"><span>Home</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
+                    Additional
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./censusData/OccupationalMix.html">Occupational Mix</a>
+                    <a class="dropdown-item" href="#">Population</a>
+                    <a class="dropdown-item" href="#">Education</a>
+                    <a class="dropdown-item" href="#">Housing</a>
+                    <a class="dropdown-item" href="#">Crimes</a>
+                    <a class="dropdown-item" href="./censusData/AdditionalAll.html">Additional All</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./censusData/StudiesCensus.html">Studies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./censusData/aboutCensus.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./censusData/contactCensus.html">Contact US</a>
+            </li>
+           
+        </ul>
+        <form class="form-inline" >
+            <div class="form-group">
+                <input type="text" id="searchLength" class="form-control" name="searchtext" placeholder="Search">
+            </div>
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+
+        </form>
+    </div>
+</nav>
+
+
+
+        <br>
+        <div class="container">
+        <div class= "row">
+          
+            <div class="col-md-5" >
+                <h4>Poverty rate in Crawford County, Kansas</h4>
+                <h4>Poverty rate in Harrison County, Arkansas</h4>
+            </div>
+        </div>
+      </div>
+     
+
+    </body>
+</html>
