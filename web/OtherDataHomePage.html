@@ -35,11 +35,28 @@ and open the template in the editor.
         <br>
         <div class="container">
             <div class= "row">
-                <div class="col-md-1"></div>
-                <div class="col-md-8">
+                <div class="col-md-5">
                     <a href="images/micropolitan-statistical-areas-small-town-america-image-1.jpg" download><h3 class="text-primary">Micropolitan Statistical Areas Map</h3></a>
 
                     <img src="images/micropolitan-statistical-areas-small-town-america-image-1.jpg" class="mx-auto d-block" style="width:90%" alt="MicropolitanAreaMap">
+                </div>
+                <div class="col-md-5">
+                     <form  method="POST" action="MfgServlet">
+                  
+             
+              <div class="form-group">
+                <label> Topic: </label>
+                <select id="topic" name="topiclist" >
+                    <option value="" ></option>
+                    <option value="Proverty" >Jobs</option>
+                    <option value="Accommodation and Food Services" disabled>Accommodation and Food Services</option>
+                    <option value="Resident population" disabled>Resident population</option>
+                    <option value="Farms - number" disabled>Farms - number</option>
+                </select>
+            </div>
+                <button class="btn  btn-primary" type="submit">Submit</button>
+                
+                </form>
                 </div>
             </div> 
         </div>
