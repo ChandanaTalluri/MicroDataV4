@@ -82,6 +82,20 @@ public class MfgServlet extends HttpServlet {
                  url = "/retailSales.html";
              }
              }
+             String strPoverty = request.getParameter("topiclist");
+             
+             if(strPoverty!=null && strPoverty.equals("Proverty")){
+                  String strArea = request.getParameter("microArea");
+                  if(strArea!=null){
+                     if(strArea.contains("Pitts")){
+                       url = "/PMSA_poverty.html";
+                  }else{
+                      url = "/Harrison_poverty.html";
+                  }
+                  }
+                  
+             }
+                  
             // set User object in request object and set URL*/
             
             getServletContext()

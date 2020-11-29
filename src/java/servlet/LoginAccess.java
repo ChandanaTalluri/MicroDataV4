@@ -39,7 +39,9 @@ public class LoginAccess extends HttpServlet {
             String strDataType = request.getParameter("dataType");
 
             String microType = request.getParameter("microType");
-
+            if(microType!=null){
+            
+       
             System.out.println(microType);
             if (strDelineation.equalsIgnoreCase("2003") && strDataType.equalsIgnoreCase("census")) {
                 if (microType.equalsIgnoreCase("byMicro")) {
@@ -54,6 +56,7 @@ public class LoginAccess extends HttpServlet {
                 } else {
                     url = "/OtherDataHomePage.html";
                 }
+            }
             }
 
             // set User object in request object and set URL*/
