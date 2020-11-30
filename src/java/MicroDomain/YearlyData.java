@@ -61,4 +61,10 @@ public class YearlyData  implements Serializable{
         public List fetchTotalWages(){
         return YearlyDataDBA.find_Total_WagesData();
     }
+         public List fetchTotalJobs(){
+        return YearlyDataDBA.findTCJobsData();
+    }
+             public List fetchTotal_MFG_Jobs(){
+        return YearlyDataDBA.find_MFG_JobsData();
+    }
 }

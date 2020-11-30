@@ -66,6 +66,8 @@ public class TotalCovered_MicroData extends HttpServlet {
                     }    
                 }
                 }
+               
+              
                   if(type==null || type==""){
                      type = "Jobs";
                      url = "/All_Micro_TC_Jobs.jsp";

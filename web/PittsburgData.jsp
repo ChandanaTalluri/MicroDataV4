@@ -73,21 +73,25 @@
                             type: "line",
                             name: "Quater-1",
                     showInLegend: true        ,
+                    xValueFormatString:"Year ####",
                             dataPoints: <%out.print(dataPoints1);%>
                         }, {
                             type: "line",
                             name: "Quater-2",
                     showInLegend: true        ,
+                    xValueFormatString:"Year ####",
                             dataPoints: <%out.print(dataPoints2);%>
                         }, {
                             type: "line",
                             name: "Quater-3",
                     showInLegend: true        ,
+                    xValueFormatString:"Year ####",
                             dataPoints: <%out.print(dataPoints3);%>
                         }, {
                             type: "line",
                             name: "Quater-4",
                     showInLegend: true        ,
+                    xValueFormatString:"Year ####",
                             dataPoints: <%out.print(dataPoints4);%>
                         }
                     ]

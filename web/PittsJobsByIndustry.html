@@ -17,6 +17,18 @@ and open the template in the editor.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <script type="text/javascript">
+
+            window.onload = function () {
+                 var x = document.getElementById("show");
+                    if (x.style.display === "none") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "none";
+                    }
+                
+            }
+        </script>
     </head>
     <body>
         <div id="nav-placeholder"></div>
@@ -35,32 +47,19 @@ and open the template in the editor.
         <br>
         <div class="container">
             <div class= "row">
-                <div class="col-md-5">
-                    <a href="images/micropolitan-statistical-areas-small-town-america-image-1.jpg" download><h3 class="text-primary">Micropolitan Statistical Areas Map</h3></a>
-
-                    <img src="images/micropolitan-statistical-areas-small-town-america-image-1.jpg" class="mx-auto d-block" style="width:90%" alt="MicropolitanAreaMap">
-                </div>
-                <div class="col-md-5">
-                     <form  method="POST" action="TotalCovered_MicroData">
-                  
-                         <h3>Datasets for all Micropolitan Areas </h3>
-              <div class="form-group">
-                <label> Topic: </label>
-                <select id="topic" name="topiclistAllMicros" >
-                    <option value="" ></option>
-                    <option value="Jobs" >Jobs</option>
-                    <option value="Payroll" disabled>Payroll</option>
-                    <option value="Wages" disabled>Wages</option>
-                    <option value="Farms - number" disabled>Farms - number</option>
-                </select>
-            </div>
-                <button class="btn  btn-primary" type="submit">Submit</button>
                 
-                </form>
-                </div>
+               <div class="col-md-8">
+                     <a href="excelfiles/CrawFordCounty_KS_QCEWData_Q1_2020.xlsx" download>
+                <h4>Jobs by Industry in Pittsburg Micropolitan Area , Kansas, Q1-2019</h4></a>
+                <br>
+               
+                </div> 
+                <div class="col-md-4" >
+                
+            </div> 
             </div> 
         </div>
-        <br>
+                <br>
         <br>
         <br><br><br><br><br>
         

@@ -17,6 +17,18 @@ and open the template in the editor.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <script type="text/javascript">
+
+            window.onload = function () {
+                 var x = document.getElementById("show");
+                    if (x.style.display === "none") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "none";
+                    }
+                
+            }
+        </script>
     </head>
     <body>
         <div id="nav-placeholder"></div>
@@ -47,10 +59,11 @@ and open the template in the editor.
                 <form  method="POST" action="MfgServlet">
                     <div class="form-group">
                 <label>Select Micropolitan Area:</label>
-                 <select id="myDropDownList" name ="microArea" >
+                 <select id="microArea" name ="microArea" >
                     <option value="" ></option>
-                    <option value="Harrison,AR" >Harrison, AR</option>
                     <option value="Pittsburg,KS" >Pittsburg, KS</option>
+                    <option value="Harrison,AR" disabled >Harrison, AR</option>
+                    
                     <option value="Abbeville,LA" disabled>Abbeville, LA</option>
                     <option value="Aberdeen,SD" disabled>Aberdeen, SD</option>
                     <option value="Aberdeen,WA" disabled>Aberdeen, WA</option>
@@ -612,13 +625,13 @@ and open the template in the editor.
              
               <div class="form-group">
                 <label> Topic: </label>
-                <select id="topic" name="topiclist" >
+                <select id="topic" name="otherSourcesByMicro" >
 <option value="" ></option>
-<option value="Crawford" >Jobs by Industry in Crawford County, Kansas, Q1-2019</option>
-<option value="Harrison" >Jobs by Industry in Boone County, Arkansas , Q1-2019</option>
-<option value="Resident population" disabled>Resident population</option>
-<option value="Farms - number" disabled>Farms - number</option>
-<option value="Cropland - total (adjusted and not adjusted)" disabled>Cropland - total (adjusted and not adjusted)</option>
+<option value="Jobs" >Jobs </option>
+<option value="retailSales" disabled>Total retail sales</option>
+<option value="payroll" disabled>Payroll</option>
+<option value="per-capita income" disabled>Total Personal income per capita</option>
+<option value="per-capita income" disabled>Total Number of Households</option>
 
 </select>
             </div>
@@ -628,9 +641,23 @@ and open the template in the editor.
             </div> 
             </div> 
         </div>
+        <div id = "show">
+            <a href="excelfiles/CrawFordCounty_KS_QCEWData_Q1_2020.xlsx" download>
+                <h4>Jobs by Industry in Crawford County, Kansas, Q1-2019</h4></a>
+        </div>
         <br>
         <br>
         <br><br><br><br><br>
-        
+        <script>
+function myFunction() {
+    var microArea= document.getElementById("microArea")
+  var topic = document.getElementById("topic");
+  if (microArea.value == "Harrison,AR") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
     </body>
 </html>

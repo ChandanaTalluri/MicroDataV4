@@ -9,6 +9,7 @@ package DataAccessLayer;
 import MicroException.RecordsNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -22,8 +23,13 @@ public class MainMethod {
 //    objTC.findPittsDataQ1("Pittsburg");
 //    objTC.findPittsDataQ1("Harrison");
 //   
- Micro_TC_DBA objMA = new Micro_TC_DBA();
- ArrayList objArr = objMA.find_TC_Jobs_Data();
-    objArr.get(0);
+// Micro_TC_DBA objMA = new Micro_TC_DBA();
+// ArrayList objArr = objMA.find_TC_Jobs_Data();
+//    objArr.get(0);
+
+YearlyDataDBA objMfg = new YearlyDataDBA();
+     List<Map<Object,Object>> list = objMfg.find_MFG_JobsData();
+        System.out.println(list);
+  
     }
 }

@@ -85,6 +85,7 @@ public class MfgServlet extends HttpServlet {
              String strPoverty = request.getParameter("topiclist");
              
              if(strPoverty!=null && strPoverty.equals("Proverty")){
+                 url = "/PMSA_poverty.html";
                   String strArea = request.getParameter("microArea");
                   if(strArea!=null){
                      if(strArea.contains("Pitts")){
@@ -95,6 +96,13 @@ public class MfgServlet extends HttpServlet {
                   }
                   
              }
+             String otherSourcesByMicro = request.getParameter("otherSourcesByMicro");
+             
+             if(otherSourcesByMicro!=null && otherSourcesByMicro.equals("Jobs")){
+                 url = "/PittsJobsByIndustry.html";
+                                   
+             }
+            
                   
             // set User object in request object and set URL*/
             

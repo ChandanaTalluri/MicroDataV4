@@ -48,6 +48,7 @@
                     },
                     data: [{
                     type: "line"        ,
+                    xValueFormatString:"####",
                             dataPoints: <%out.print(dataPoints1);%>
                         }]
                 });

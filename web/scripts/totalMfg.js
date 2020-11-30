@@ -22,6 +22,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
+        xValueFormatString:"####",
 		dataPoints: [{x: 1990,y:2164429.0},{x: 1991,y:2103269.0},{x: 1992,y:2118879.0},
                     {x: 1993,y:2167768.0},{x: 1994,y:2238403.0},{x: 1995,y:2279439.0},{x: 1996,y:2264810.0},
                     {x: 1997,y:2290788.0},{x: 1998,y:2306072.0},{x: 1999,y:2281658.0},{x: 2000,y:2253739.0},

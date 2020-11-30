@@ -1,5 +1,20 @@
 <!DOCTYPE html>
+<%@page import="MicroDomain.YearlyData"%>
+<%@page import="java.util.Map"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="com.google.gson.Gson"%>
+<%@ page import="com.google.gson.JsonObject"%>
 
+<%
+    Gson gsonObj = new Gson();
+    List<Map<Object, Object>> list = new ArrayList<Map<Object, Object>>();
+    YearlyData objMfg = new YearlyData();
+    list = objMfg.fetchTotal_MFG_Jobs();
+    String dataPoints = gsonObj.toJson(list);
+
+%>
 <html>
 
     <head>  
@@ -12,7 +27,31 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
         <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-         <script src="scripts/main.js"></script>
+         <script type="text/javascript">
+
+            window.onload = function () {
+
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    theme: "light2",
+                    axisX: {
+                        title: "Year",
+                        valueFormatString: "####"
+                    },
+                    axisY: {
+                        title: "Manufacturing Jobs"
+                    },
+                    
+                    data: [{        
+                            type: "line",
+                            indexLabelFontSize: 16,
+                            xValueFormatString:"####",
+                            dataPoints: <%out.print(dataPoints);%>
+                           }]
+                });
+                chart.render();
+            }
+        </script>
     </head>
 
     <body>   

@@ -48,6 +48,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	data: [{
 		type: "line",
+                xValueFormatString:"####",
 		dataPoints : <%out.print(dataPoints1);%>
 	} ]
 });

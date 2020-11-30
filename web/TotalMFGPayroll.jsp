@@ -50,6 +50,7 @@
                     data: [{
                             type: "line",
                     indexLabelFontSize: 16        ,
+                    xValueFormatString:"####",
                             dataPoints: <%out.print(dataPoints1);%>
                         }]
                 });
