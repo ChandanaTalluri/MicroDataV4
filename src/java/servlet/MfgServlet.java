@@ -99,8 +99,16 @@ public class MfgServlet extends HttpServlet {
              String otherSourcesByMicro = request.getParameter("otherSourcesByMicro");
              
              if(otherSourcesByMicro!=null && otherSourcesByMicro.equals("Jobs")){
+                 
                  url = "/PittsJobsByIndustry.html";
-                                   
+                  String strArea = request.getParameter("microArea");
+                  if(strArea!=null){
+                     if(strArea.contains("Pitts")){
+                       url = "/PittsJobsByIndustry.html";
+                  }else{
+                    url="/HarrisonJobsByIndustry.html";
+                  }
+                  }               
              }
             
                   

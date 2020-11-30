@@ -15,13 +15,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
         <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-          <link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
+
+        <link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/r-2.2.6/datatables.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/r-2.2.6/datatables.min.css"/>
+
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-        <script src="scripts/utility.js"></script>
+        
+        
         <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
         <style>
@@ -62,7 +63,15 @@
             <div class="col-md-3"></div>
             <div class="col-md-5">
                 <h3>List of all Micropolitan Area</h3>
-              
+              <script>
+                    $(document).ready(function () {
+
+                        $('#MA_NAmes').DataTable({
+                            // false to disable pagination (or any other option)
+                        });
+                    });
+
+                </script>
                 <table id="MA_NAmes" class="display" style="width:100%">
                     <tr>
                         <th>S.NO</th>
@@ -83,13 +92,6 @@
                 </table>
             </div>
         </div>
-         <script type="text/javascript">
-        $(document).ready( function () {
-            $('#MA_NAmes').DataTable({  
-                responsive: true,
-                order: [[ 0, "desc" ]]
-            });
-        });
-       </script>
+         
     </body>
 </html>

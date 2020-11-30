@@ -21,7 +21,7 @@
         <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-        <script src="scripts/utility.js"></script>
+        
         <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
         <style>
