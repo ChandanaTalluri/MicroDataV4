@@ -96,6 +96,12 @@ public class MfgServlet extends HttpServlet {
                   }
                   
              }
+             String topiclistAllCensus = request.getParameter("topiclistAllCensus");
+             
+             if(topiclistAllCensus!=null && topiclistAllCensus.equals("Proverty")){
+                 url = "/Poverty_Census.html";
+                  
+             }
              String otherSourcesByMicro = request.getParameter("otherSourcesByMicro");
              
              if(otherSourcesByMicro!=null && otherSourcesByMicro.equals("Jobs")){
