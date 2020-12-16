@@ -16,6 +16,10 @@
         <servlet-name>LoginAccess</servlet-name>
         <servlet-class>servlet.LoginAccess</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CensusSearch</servlet-name>
+        <servlet-class>servlet.CensusSearch</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MfgServlet</servlet-name>
         <url-pattern>/MfgServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>LoginAccess</servlet-name>
         <url-pattern>/loginAccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CensusSearch</servlet-name>
+        <url-pattern>/CensusSearch</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
