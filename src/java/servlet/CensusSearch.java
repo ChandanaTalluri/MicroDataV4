@@ -31,32 +31,39 @@ public class CensusSearch extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-         String url = "/index.html";
-            HttpSession session = request.getSession();
-               
-           try{
-              
-             String strtext = request.getParameter("searchtext");
-             if(strtext==null||strtext=="" ){
-                   url = "/index.html";
-             }else if(strtext.contains("poverty")){
-              url="/All_Poverty_Census.html";   
-             }
-      
+        String url = "/index.html";
+        HttpSession session = request.getSession();
+
+        try {
+
+            String strtext = request.getParameter("searchtext");
+            if (strtext == null || strtext == "") {
+                url = "/index.html";
+            } else if (strtext.contains("pov")) {
+                url = "/All_Poverty_Census.html";
+            }
+            String searchByMicro = request.getParameter("searchByMicro");
+            if (strtext == null || strtext == "") {
+                if ((searchByMicro == null || searchByMicro == "")) {
+                    url = "/index.html";
+                } else if (searchByMicro.contains("pov")) {
+                    url = "/ByMicro_Poverty_Census.html";
+                }
+            }
+
             // set User object in request object and set URL*/
-            
             getServletContext()
-            .getRequestDispatcher(url)
-            .forward(request, response);
-           }catch(Exception e){
-               url = "/index.html"; 
-               request.setAttribute("message", e.getMessage());
-              // HttpSession session = request.getSession();
-               session.setAttribute("message", e.getMessage());
-               getServletContext()
-            .getRequestDispatcher(url)
-            .forward(request, response);
-           }
+                    .getRequestDispatcher(url)
+                    .forward(request, response);
+        } catch (Exception e) {
+            url = "/index.html";
+            request.setAttribute("message", e.getMessage());
+            // HttpSession session = request.getSession();
+            session.setAttribute("message", e.getMessage());
+            getServletContext()
+                    .getRequestDispatcher(url)
+                    .forward(request, response);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

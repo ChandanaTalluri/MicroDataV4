@@ -39,6 +39,8 @@ public class LoginAccess extends HttpServlet {
             String strDataType = request.getParameter("dataType");
 
             String microType = request.getParameter("microType");
+            
+            session.setAttribute("microType", microType);
             if(microType!=null){
             
        
