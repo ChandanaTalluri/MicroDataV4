@@ -25,7 +25,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="PittsburgData.jsp"><h3>Employment trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
+            <a href="PittsburgData.jsp"><h3>Job trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h3></a>
                 <p>
                     Can write some story about the pittsburg data 
                 </p>
@@ -36,7 +36,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-            <a href="HarrisonData.jsp"><h3>Employment trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
+            <a href="HarrisonData.jsp"><h3>Job trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h3></a>
                 <p>
                     Can write some story about the Harrison data 
                 </p>

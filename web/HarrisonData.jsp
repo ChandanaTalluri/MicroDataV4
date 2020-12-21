@@ -125,7 +125,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-9">
-                <h2>Employment trends in Manufacturing in the Harrison Micropolitan Area, Kansas</h2>    
+                <h2>Job trends in Manufacturing in the Harrison Micropolitan Area, Arkansas</h2>    
                 <br>
                 <div id="chartContainer" style="height: 370px; width: 100%;"> </div>
                 <h5>Source:Quarterly Census of Employment and Wages</h5>

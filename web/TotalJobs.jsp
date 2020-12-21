@@ -68,7 +68,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="TotalJobs.jsp"><h3> Employment in Micropolitan Areas </h3>  </a>
+                <a href="TotalJobs.jsp"><h3> Jobs in Micropolitan Areas </h3>  </a>
                 
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
             

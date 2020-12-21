@@ -68,7 +68,7 @@
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <a href="index.html"><h3> Employment trends in Manufacturing, Micropolitan Areas </h3>  </a>
+                <a href="index.html"><h3> Job trends in Manufacturing, Micropolitan Areas </h3>  </a>
 
                 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                 <h5>Source:Quarterly Census of Employment and Wages</h5>

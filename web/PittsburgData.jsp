@@ -124,7 +124,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-9">
                 <p class="titleColor">
-                <h2>Employment trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h2>   
+                <h2>Job trends in Manufacturing in the Pittsburg Micropolitan Area, Kansas</h2>   
                 </p>
                 <br>
                 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
