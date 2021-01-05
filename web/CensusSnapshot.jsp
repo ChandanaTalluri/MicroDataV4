@@ -1,3 +1,10 @@
+<%-- 
+    Document   : CensusSnapshot
+    Created on : 5 Jan, 2021, 10:01:34 AM
+    Author     : Chandana
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -17,26 +24,33 @@ and open the template in the editor.
         <link rel="stylesheet" href="../styles/main.css" type="text/css"/>
     </head>
     <body>
-        
 <div id="nav-placeholder"></div>
         <script>
             $(function () {
                 $("#nav-placeholder").load("importNavHome_Census.html");
             });
         </script> 
-     <br>
         <br>
-  
-
- <br>
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-9">
-            <a href="excelfiles/Poverty rate in 2018-5year estimate for Harrison Micropolitan Area,Ak.xlsx"  download>
-                <h4>Poverty rate in Harrison Micropolitan Area, Arkansas</h4></a>
-           
+        <div class="container">
+        <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-9" >
+               <h3 class="text-primary">Census Snapshot 2000</h3>
+               <br>
+               
+                
+            </div>
+            <div class="col-md-1">
+                <a href="./excelfiles/Census 2000 MD add to BM-E.xlsx" download> <h3 class="text-primary">Download</h3>
+                </a> 
+            </div>
+          
+            
+          
            
         </div>
-    </div> 
- </body>
+      </div>
+        </div>
+
+    </body>
 </html>

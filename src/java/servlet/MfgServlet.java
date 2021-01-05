@@ -7,6 +7,7 @@ package servlet;
 
 
 
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -85,13 +86,13 @@ public class MfgServlet extends HttpServlet {
              String strPoverty = request.getParameter("topiclist");
              
              if(strPoverty!=null && strPoverty.equals("Proverty")){
-                 url = "/PMSA_poverty.html";
+                 url = "/PMSA_poverty.jsp";
                   String strArea = request.getParameter("microArea");
                   if(strArea!=null){
                      if(strArea.contains("Pitts")){
-                       url = "/PMSA_poverty.html";
+                       url = "/PMSA_poverty.jsp";
                   }else{
-                      url = "/Harrison_poverty.html";
+                      url = "/Harrison_poverty.jsp";
                   }
                   }
                   
@@ -106,13 +107,13 @@ public class MfgServlet extends HttpServlet {
              
              if(otherSourcesByMicro!=null && otherSourcesByMicro.equals("Jobs")){
                  
-                 url = "/PittsJobsByIndustry.html";
+                 url = "/PittsJobsByIndustry.jsp";
                   String strArea = request.getParameter("microArea");
                   if(strArea!=null){
                      if(strArea.contains("Pitts")){
-                       url = "/PittsJobsByIndustry.html";
+                       url = "/PittsJobsByIndustry.jsp";
                   }else{
-                    url="/HarrisonJobsByIndustry.html";
+                    url="/HarrisonJobsByIndustry.jsp";
                   }
                   }               
              }

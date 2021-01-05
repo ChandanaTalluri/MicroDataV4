@@ -6,6 +6,8 @@
 package DataAccessLayer;
 
 
+import MicroDomain.JobsByIndustry;
+import MicroDomain.Poverty_Rate;
 import MicroException.RecordsNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,19 +19,15 @@ import java.util.Map;
  */
 public class MainMethod {
     public static void main (String[] args) throws RecordsNotFoundException{
-//        ManufacturingDBA objTC = new ManufacturingDBA();
-//        //objTC.findPittsDataQ1("Pittsburg");
-//    //YearlyDataDBA objDBA = new YearlyDataDBA();
-//    objTC.findPittsDataQ1("Pittsburg");
-//    objTC.findPittsDataQ1("Harrison");
-//   
-// Micro_TC_DBA objMA = new Micro_TC_DBA();
-// ArrayList objArr = objMA.find_TC_Jobs_Data();
-//    objArr.get(0);
+        
+        ArrayList<JobsByIndustry> arrPoverty = JobsByIndustry_DBA.findAllDetails("Harrison Micropolitan Area, Arkansas");
 
-YearlyDataDBA objMfg = new YearlyDataDBA();
-     List<Map<Object,Object>> list = objMfg.find_MFG_JobsData();
-        System.out.println(list);
-  
+        System.out.println(arrPoverty.size());
+        
+        
+        
+        
+        
+        
     }
 }
