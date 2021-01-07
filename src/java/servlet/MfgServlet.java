@@ -117,7 +117,15 @@ public class MfgServlet extends HttpServlet {
                   }
                   }               
              }
-            
+             String otherSourcesAllMicro = request.getParameter("topiclistAllMicros");
+             
+             if(otherSourcesAllMicro!=null && otherSourcesAllMicro.equals("Jobs")){
+                 url = "/All_Micro_TC_Jobs.jsp";
+             }else if(otherSourcesAllMicro!=null && otherSourcesAllMicro.equals("Payroll")){
+                 url="/All_Micro_TC_Payroll.jsp";
+             }else if(otherSourcesAllMicro!=null && otherSourcesAllMicro.equals("Wages")){
+                 url="/All_Micro_TC_Wages.jsp";
+             }
                   
             // set User object in request object and set URL*/
             

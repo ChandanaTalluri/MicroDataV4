@@ -5,14 +5,6 @@
         <servlet-class>servlet.MfgServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Projections</servlet-name>
-        <servlet-class>servlet.Projections</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>TotalCovered_MicroData</servlet-name>
-        <servlet-class>servlet.TotalCovered_MicroData</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>LoginAccess</servlet-name>
         <servlet-class>servlet.LoginAccess</servlet-class>
     </servlet>
@@ -23,14 +15,6 @@
     <servlet-mapping>
         <servlet-name>MfgServlet</servlet-name>
         <url-pattern>/MfgServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Projections</servlet-name>
-        <url-pattern>/Projections</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>TotalCovered_MicroData</servlet-name>
-        <url-pattern>/TotalCovered_MicroData</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoginAccess</servlet-name>
