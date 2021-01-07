@@ -153,7 +153,6 @@ and open the template in the editor.
                         <tbody><tr height="68" style="height:51.0pt">
                                 <td height="68" class="xl66" dir="LTR" width="35" style="height:51.0pt;width:26pt">Year</td>
                                 <td class="xl66" dir="LTR" width="69" style="border-left:none;width:52pt">Quarter</td>
-                                <td class="xl66" dir="LTR" width="51" style="border-left:none;width:38pt">Area Type</td>
                                 <td class="xl66" dir="LTR" width="62" style="border-left:none;width:47pt">State
                                     Name</td>
                                 <td class="xl66" dir="LTR" width="241" style="border-left:none;width:181pt">Area</td>
@@ -173,7 +172,6 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -189,7 +187,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -205,7 +203,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -221,7 +219,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -237,7 +235,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -253,7 +251,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -268,7 +266,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -284,7 +282,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -299,7 +297,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -314,7 +312,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -329,7 +327,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -345,7 +343,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -360,7 +358,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -376,7 +374,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -392,7 +390,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -408,7 +406,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Crawford County,
                                     Kansas</td>
@@ -424,10 +422,8 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl65" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1</td>
-                                <td class="xl65" style="border-top:none;border-left:none">County</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Kansas</td>
-                                <td class="xl65" style="border-top:none;border-left:none">Crawford County,
-                                    Kansas</td>
+                                <td class="xl65" style="border-top:none;border-left:none">Crawford County,Kansas</td>
                                 <td class="xl65" style="border-top:none;border-left:none">Private</td>
                                 <td class="xl65" style="border-top:none;border-left:none">1027 Other services</td>
                                 <td class="xl68" style="border-top:none;border-left:none">68</td>
@@ -440,7 +436,6 @@ and open the template in the editor.
                             <tr height="0" style="display:none">
                                 <td width="35" style="width:26pt"></td>
                                 <td width="69" style="width:52pt"></td>
-                                <td width="51" style="width:38pt"></td>
                                 <td width="62" style="width:47pt"></td>
                                 <td width="241" style="width:181pt"></td>
                                 <td width="137" style="width:103pt"></td>
@@ -455,7 +450,7 @@ and open the template in the editor.
                         </tbody></table>
                 </div> 
                 <div class="col-md-1" >
-                    <a href="excelfiles/CrawFordCounty_KS_QCEWData_Q1_2020.xlsx" download>Download</a>
+                    <a href="excelfiles/PMSA_KS_QCEWData_Q1_2020.xlsx" download>Download</a>
                 </div> 
             </div> 
         </div>

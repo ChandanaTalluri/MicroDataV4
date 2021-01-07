@@ -161,7 +161,7 @@ and open the template in the editor.
                             <tr height="51" style="height:38.25pt">
                                 <td height="51" class="xl65" dir="LTR" width="35" style="height:38.25pt;width:26pt">Year</td>
                                 <td class="xl65" dir="LTR" width="60" style="border-left:none;width:45pt">Quarter</td>
-                                <td class="xl65" dir="LTR" width="51" style="border-left:none;width:38pt">Area Type</td>
+                                
                                 <td class="xl65" dir="LTR" width="62" style="border-left:none;width:47pt">State
                                     Name</td>
                                 <td class="xl65" dir="LTR" width="241" style="border-left:none;width:181pt">Area</td>
@@ -181,7 +181,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -197,7 +197,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -213,7 +213,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -229,7 +229,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -245,7 +245,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -261,7 +261,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -276,7 +276,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -292,7 +292,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -307,7 +307,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -322,7 +322,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -337,7 +337,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -353,7 +353,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -368,7 +368,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -384,7 +384,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -400,7 +400,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -416,7 +416,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -432,7 +432,7 @@ and open the template in the editor.
                             <tr height="20" style="height:15.0pt">
                                 <td height="20" class="xl67" style="height:15.0pt;border-top:none">2020</td>
                                 <td class="xl67" style="border-top:none;border-left:none">1</td>
-                                <td class="xl67" style="border-top:none;border-left:none">County</td>
+                                
                                 <td class="xl67" style="border-top:none;border-left:none">Arkansas</td>
                                 <td class="xl67" style="border-top:none;border-left:none">Harrison Micropolitan
                                     Area, Arkansas</td>
@@ -448,7 +448,7 @@ and open the template in the editor.
                             <tr height="0" style="display:none">
                                 <td width="35" style="width:26pt"></td>
                                 <td width="60" style="width:45pt"></td>
-                                <td width="51" style="width:38pt"></td>
+                                
                                 <td width="62" style="width:47pt"></td>
                                 <td width="241" style="width:181pt"></td>
                                 <td width="137" style="width:103pt"></td>
