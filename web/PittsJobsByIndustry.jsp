@@ -139,13 +139,7 @@ and open the template in the editor.
                 $("#nav-placeholder").load("importNavOther.html");
             });
         </script>
-        <div style="background-color: lightgray">
-            <p class="marquee">
-                <span id="headline">
-                    Of the 756 students tested for COVID-19 at Pittsburg State University in the past few weeks as part of a move-in process required by the county of those planning to live in residence halls, 15 were positive, or 1.98 percent, the university announced Tuesday.
-                </span>
-            </p>
-        </div>
+        
         <br>
         <div class="container">
             <div class= "row">

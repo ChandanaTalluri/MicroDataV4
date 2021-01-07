@@ -9,14 +9,6 @@ and open the template in the editor.
 <%@page import="MicroDomain.Poverty_Rate"%>
 <%@page import="java.util.ArrayList"%>
 
-<%
-  
-    ArrayList<Poverty_Rate> objArr = new ArrayList<Poverty_Rate>();
-    Poverty_Rate objPR = new Poverty_Rate();
-    objArr = objPR.fetchAllDetails();
-
-
-%>
 <html>
     <head>
 

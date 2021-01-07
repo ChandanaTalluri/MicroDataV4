@@ -20,33 +20,30 @@ and open the template in the editor.
     </head>
     <body>
         <div id="nav-placeholder"></div>
+        <div id="scrolling"></div>
         <script>
             $(function () {
                 $("#nav-placeholder").load("importNavOther.html");
+                $("#scrolling").load("scrolling.html");
             });
         </script>
-        <div style="background-color: lightgray">
-            <p class="marquee">
-                <span id="headline">
-                    Of the 756 students tested for COVID-19 at Pittsburg State University in the past few weeks as part of a move-in process required by the county of those planning to live in residence halls, 15 were positive, or 1.98 percent, the university announced Tuesday.
-                </span>
-            </p>
-        </div>
+        
         <br>
         <div class="container">
             <div class= "row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <a href="excelfiles/Number of Jobs by Micropolitan Area - by Industry for 2000.xlsx" download><h3 class="text-primary">Jobs in Micropolitan Statistical Areas</h3></a>
 
-                    <img src="images/snapshot_for_Jobs.PNG" class="mx-auto d-block" style="width:90%" alt="MicropolitanAreaMap">
+                    <img src="images/snapshot for Jobs.PNG" height="300" width="700" alt="MicropolitanAreaMap">
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-4">
                      <form  method="POST" action="TotalCovered_MicroData">
                   
-                         <h3>Datasets for all Micropolitan Areas </h3>
+                         <h4>Datasets for all Micropolitan Areas </h4>
               <div class="form-group">
                 <label> Topic: </label>
-                <select id="topic" name="topiclistAllMicros" >
+                <select class="form-control" id="topic" name="topiclistAllMicros" >
                     <option value="" ></option>
                     <option value="Jobs" >Jobs</option>
                     <option value="Payroll" disabled>Payroll</option>

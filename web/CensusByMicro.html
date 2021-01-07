@@ -19,9 +19,11 @@ and open the template in the editor.
     <body>
         
         <div id="nav-placeholder"></div>
+        <div id="scrolling"></div>
         <script>
             $(function () {
                 $("#nav-placeholder").load("importNavHome_Census_ByMicro.html");
+                $("#scrolling").load("scrolling.html");
             });
         </script>   
         
@@ -30,13 +32,13 @@ and open the template in the editor.
         <div class="container">
             <div class= "row" >
                 <div class="col-md-7" >
-                    <img src="./images/pittsburg-ks-areamap.jpg" class="img-fluid" alt="College logo"> 
+                    <img src="./images/pittsburg-ks-areamap.jpg"  height="300" width="600" alt="College logo"> 
                 </div>
             <div class="col-md-4" >
                 <form  method="POST" action="MfgServlet">
                     <div class="form-group">
                 <label>Select Micropolitan Area:</label>
-                 <select id="myDropDownList" name ="microArea" >
+                 <select class="form-control" id="myDropDownList" name ="microArea" >
                     <option value="" ></option>
                     <option value="Harrison,AR" >Harrison, AR</option>
                     <option value="Pittsburg,KS" >Pittsburg, KS</option>
@@ -601,7 +603,7 @@ and open the template in the editor.
              
                 <div class="form-group">
                     <label> Topic: </label>
-                    <select id="topic" name="topiclist" >
+                    <select class="form-control" id="topic" name="topiclist" >
 <option value="" ></option>
 <option value="Proverty" >Poverty</option>
 <option value="Resident population" disabled>Resident population</option>

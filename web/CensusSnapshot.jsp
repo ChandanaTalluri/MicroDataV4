@@ -22,6 +22,7 @@ and open the template in the editor.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="../styles/main.css" type="text/css"/>
+       
     </head>
     <body>
 <div id="nav-placeholder"></div>
@@ -33,16 +34,16 @@ and open the template in the editor.
         <br>
         <div class="container">
         <div class= "row">
-            <div class="col-md-1"></div>
+            
             <div class="col-md-9" >
                <h3 class="text-primary">Census Snapshot 2000</h3>
                <br>
-               
+               <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVblA_HYVufC6O8-TZSTXncs07iKSznxXgX-9xYEJBCCefRixoVDu-gfbMsjsUxA/pubhtml?gid=104653232&amp;single=true&amp;widget=true&amp;headers=false" height="600" width="1200" ></iframe>
+                
                 
             </div>
             <div class="col-md-1">
-                <a href="./excelfiles/Census 2000 MD add to BM-E.xlsx" download> <h3 class="text-primary">Download</h3>
-                </a> 
+                <a href="./excelfiles/Census 2000 MD add to BM-E.xlsx" download>Download</a> 
             </div>
           
             

@@ -17,78 +17,79 @@ and open the template in the editor.
         <link rel="stylesheet" href="../styles/main.css" type="text/css"/>
     </head>
     <body>
-<div id="nav-placeholder"></div>
+        <div id="nav-placeholder"></div>
+        <div id="scrolling"></div>
         <script>
             $(function () {
                 $("#nav-placeholder").load("importNavHome_Census.html");
+                $("#scrolling").load("scrolling.html");
             });
         </script> 
         <br>
         <div class="container">
-        <div class= "row">
-            <div class="col-md-5" >
-                <a href="CensusSnapshot.jsp" > <h3 class="text-primary">Census Snapshot 2000</h3>
-                </a>   
-                <img src="./images/CensusSnapShot_1.PNG" class="mx-auto d-block" style="width:100%" alt="MicropolitanAreaMap">
-                <h3>Census Snapshot 2010</h3>
-                <h3>Census Snapshot 1990</h3>
-                <br>
-                <br>
+            <div class= "row">
+                <div class="col-md-8" >
+                    <a href="CensusSnapshot.jsp" > <h3 class="text-primary">Census Snapshot 2000</h3>
+                    </a>   
+                    <img src="./images/CensusSnapshot.PNG" class="mx-auto d-block" width="800" alt="MicropolitanAreaMap">
+                    <h3>Census Snapshot 2010</h3>
+                    <h3>Census Snapshot 1990</h3>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-sm-3">
+                    <h5>Census details for all Micros</h5>
+                    <form  method="POST"  action="MfgServlet">
+                        <div class="form-group ">
+                            <label> Topic: </label>
+                            <select class="form-control" id="topic" name="topiclistAllCensus" >
+                                <option value="" ></option>
+                                <option value="Proverty" >Poverty</option>
+                                <option value="Resident population" disabled>Resident population</option>
+                                <option value="Farms - number" disabled>Farms - number</option>
+                                <option value="Cropland - total (adjusted and not adjusted)" disabled>Cropland - total (adjusted and not adjusted)</option>
+                                <option value="Value of farm products sold - (adjusted and not adjusted)" disabled>Value of farm products sold - (adjusted and not adjusted)</option>
+                                <option value="Persons reporting ancestry" disabled>Persons reporting ancestry</option>
+                                <option value="Commercial banks and savings institutions (FDIC-insured)" disabled>Commercial banks and savings institutions (FDIC-insured)</option>
+                                <option value="Savings institutions (FDIC-insured) - total deposits" disabled>Savings institutions (FDIC-insured) - total deposits</option>
+                                <option value="New private housing units authorized by building permits" disabled>New private housing units authorized by building permits</option>
+                                <option value="Private nonfarm establishments" disabled>Private nonfarm establishments</option>
+                                <option value="Civilian labor force" disabled>Civilian labor force</option>
+                                <option value="Number of violent crimes known to police" disabled>Number of violent crimes known to police</option>
+                                <option value="Earnings in all industries" disabled>Earnings in all industries</option>
+                                <option value="Public school enrollment" disabled>Public school enrollment</option>
+                                <option value="Educational attainment" disabled>Educational attainment</option>
+                                <option value="Vote cast for president" disabled>Vote cast for president</option>
+                                <option value="Employment in all industries" disabled>Employment in all industries</option>
+                                <option value="Federal Government expenditure" disabled>Federal Government expenditure</option>
+                                <option value="Earnings in government and government enterprises" disabled>Earnings in government and government enterprises</option>
+                                <option value="Employment in government and government enterprises" disabled>Employment in government and government enterprises</option>
+                                <option value="Hospital insurance and/or supplemental medical insurance (Medicare)" disabled>Hospital insurance and/or supplemental medical insurance (Medicare)</option>
+                                <option value="Total persons" disabled>Total persons</option>
+                                <option value="Households" disabled>Households</option>
+                                <option value="Housing unit estimates" disabled>Housing unit estimates</option>
+                                <option value="Households with earnings" disabled>Households with earnings</option>
+                                <option value="Per capita income" disabled>Per capita income</option>
+                                <option value="People of all ages in poverty" disabled>People of all ages in poverty</option>
+                                <option value="Employment status with respect to age" disabled>Employment status with respect to age</option>
+                                <option value="Households with earnings" disabled>Households with earnings</option>
+                                <option value="Means of transportation to work" disabled>Means of transportation to work</option>
+                                <option value="Local government finances - general revenue" disabled>Local government finances - general revenue</option>
+                                <option value="Non-employer establishments for all Industries" disabled>Non-employer establishments for all Industries</option>
+                                <option value="Personal income" disabled>Personal income</option>
+                                <option value="BEA population" disabled>BEA population</option>
+                            </select>
+                        </div>
+
+                        <button class="btn  btn-primary" type="submit">Submit</button>
+
+                    </form>
+
+
+
+                </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-sm-5">
-                <h5>Census details for all Micros</h5>
-              <form  method="POST" action="MfgServlet">
-                  
-             
-              <div class="form-group">
-                <label> Topic: </label>
-                <select id="topic" name="topiclistAllCensus" >
-<option value="" ></option>
-<option value="Proverty" >Poverty</option>
-<option value="Resident population" disabled>Resident population</option>
-<option value="Farms - number" disabled>Farms - number</option>
-<option value="Cropland - total (adjusted and not adjusted)" disabled>Cropland - total (adjusted and not adjusted)</option>
-<option value="Value of farm products sold - (adjusted and not adjusted)" disabled>Value of farm products sold - (adjusted and not adjusted)</option>
-<option value="Persons reporting ancestry" disabled>Persons reporting ancestry</option>
-<option value="Commercial banks and savings institutions (FDIC-insured)" disabled>Commercial banks and savings institutions (FDIC-insured)</option>
-<option value="Savings institutions (FDIC-insured) - total deposits" disabled>Savings institutions (FDIC-insured) - total deposits</option>
-<option value="New private housing units authorized by building permits" disabled>New private housing units authorized by building permits</option>
-<option value="Private nonfarm establishments" disabled>Private nonfarm establishments</option>
-<option value="Civilian labor force" disabled>Civilian labor force</option>
-<option value="Number of violent crimes known to police" disabled>Number of violent crimes known to police</option>
-<option value="Earnings in all industries" disabled>Earnings in all industries</option>
-<option value="Public school enrollment" disabled>Public school enrollment</option>
-<option value="Educational attainment" disabled>Educational attainment</option>
-<option value="Vote cast for president" disabled>Vote cast for president</option>
-<option value="Employment in all industries" disabled>Employment in all industries</option>
-<option value="Federal Government expenditure" disabled>Federal Government expenditure</option>
-<option value="Earnings in government and government enterprises" disabled>Earnings in government and government enterprises</option>
-<option value="Employment in government and government enterprises" disabled>Employment in government and government enterprises</option>
-<option value="Hospital insurance and/or supplemental medical insurance (Medicare)" disabled>Hospital insurance and/or supplemental medical insurance (Medicare)</option>
-<option value="Total persons" disabled>Total persons</option>
-<option value="Households" disabled>Households</option>
-<option value="Housing unit estimates" disabled>Housing unit estimates</option>
-<option value="Households with earnings" disabled>Households with earnings</option>
-<option value="Per capita income" disabled>Per capita income</option>
-<option value="People of all ages in poverty" disabled>People of all ages in poverty</option>
-<option value="Employment status with respect to age" disabled>Employment status with respect to age</option>
-<option value="Households with earnings" disabled>Households with earnings</option>
-<option value="Means of transportation to work" disabled>Means of transportation to work</option>
-<option value="Local government finances - general revenue" disabled>Local government finances - general revenue</option>
-<option value="Non-employer establishments for all Industries" disabled>Non-employer establishments for all Industries</option>
-<option value="Personal income" disabled>Personal income</option>
-<option value="BEA population" disabled>BEA population</option>
-</select>
-            </div>
-                <button class="btn  btn-primary" type="submit">Submit</button>
-                
-                </form>
-            
-          
-           
-        </div>
-      </div>
         </div>
 
     </body>
