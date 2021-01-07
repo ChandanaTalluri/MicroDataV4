@@ -5,7 +5,14 @@
 --%>
 
 
+<%@page import="MicroDomain.Micro_TotalCovered"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE HTML>
+<%
+    ArrayList<Micro_TotalCovered> objTC_Jobs = new ArrayList<Micro_TotalCovered>();
+    Micro_TotalCovered objMA = new Micro_TotalCovered();
+    objTC_Jobs = objMA.fecth_TC_Jobs();
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,7 +28,7 @@
         <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-        
+
         <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
         <style>
@@ -63,7 +70,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h3>Jobs in all 554 Micropolitan Areas (2003 definition)</h3>
-               
+
                 <br>
                 <script>
                     $(document).ready(function () {
@@ -96,31 +103,19 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                   <!-- <p>Below is the Jobs data for all micropolitan areas</p>-->
-                    <c:forEach var="TC_Data" items="${TC_Data}">   
-
+                        <% for (int i = 0; i < objTC_Jobs.size(); i++) {%>
                         <tr>
-                            <td>${TC_Data.strMicro_area_name}</td>
-
-                            <td>${TC_Data.strState_Name}</td>
-
-                            <td>${TC_Data.str_Micro_Code}</td>
-
-                            <td>
-                                <fmt:setLocale value = "en_US"/>
-                                <fmt:formatNumber value = "${TC_Data.jobs_1990}" type = "number"/></td>
-                            <td>
-                                <fmt:setLocale value = "en_US"/>
-                                <fmt:formatNumber value = "${TC_Data.jobs_2000}" type = "number"/></td>
-                            <td>
-                                <fmt:setLocale value = "en_US"/>
-                                <fmt:formatNumber value = "${TC_Data.jobs_2019}" type = "number"/></td>
-
-
+                            <td><%=objTC_Jobs.get(i).getStrMicro_area_name()%></td>
+                            <td><%=objTC_Jobs.get(i).getStrState_Name()%></td>
+                            <td><%=objTC_Jobs.get(i).getStr_Micro_Code()%></td>
+                            <td class="number">
+                                <fmt:formatNumber value = "<%=objTC_Jobs.get(i).getJobs_1990()%>" type = "number"/></td>
+                            <td class="number">
+                                <fmt:formatNumber value = "<%=objTC_Jobs.get(i).getJobs_2000()%>" type = "number"/></td>
+                            <td class="number">
+                                <fmt:formatNumber value = "<%=objTC_Jobs.get(i).getJobs_2019()%>" type = "number"/></td>
                         </tr>
-                    </c:forEach>
-
+                        <%}%>
                     </tbody>
 
 
@@ -128,8 +123,8 @@
                 <br>
                 <br>
                 <br>
-                
-                
+
+
             </div>
             <div>
                 <a href="excelfiles/Program_AllMicros_TotalCovered_Jobs.xlsx" download>Download</a>

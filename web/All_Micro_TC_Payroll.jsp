@@ -4,12 +4,18 @@
     Author     : 0809379
 --%>
 
-
+<%@page import="MicroDomain.Micro_TotalCovered"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE HTML>
+<%
+    ArrayList<Micro_TotalCovered> objTC_Payroll = new ArrayList<Micro_TotalCovered>();
+    Micro_TotalCovered objMA = new Micro_TotalCovered();
+    objTC_Payroll = objMA.fecth_TC_Payroll();
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -58,13 +64,13 @@
                 $("#nav-placeholder").load("importNavOther.html");
             });
         </script>
-        
+
         <br>
         <div class= "row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <h3>Payroll in all 554 Micropolitan Areas (2003 definition)</h3>
-             
+
                 <br>
                 <script>
                     $(document).ready(function () {
@@ -86,57 +92,33 @@
                             <th  colspan="3">Micropolitan Areas in USA(2003 definition)</th>
                             <th style="text-align: center" colspan="3">Year</th>
                         </tr>
-
                         <tr>
-
                             <th>Micropolitan Area</th>
                             <th> State Name </th>
                             <th> Micropolitan Area Code</th>
-
                             <th> 1990 </th>
                             <th> 2000 </th>
                             <th> 2019 </th>
-
                         </tr>
                     </thead>
                     <tbody>
 
-
-                    <!--<p>Below is the Payroll data for all micropolitan areas</p>-->
-
-                    <c:forEach var="TC_Data" items="${TC_Data}">   
-
+                        <% for (int i = 0; i < objTC_Payroll.size(); i++) {%>
                         <tr>
-                            <td>${TC_Data.strMicro_area_name}</td>
-
-                            <td>${TC_Data.strState_Name}</td>
-
-                            <td>${TC_Data.str_Micro_Code}</td>
-
-
+                            <td><%=objTC_Payroll.get(i).getStrMicro_area_name()%></td>
+                            <td><%=objTC_Payroll.get(i).getStrState_Name()%></td>
+                            <td><%=objTC_Payroll.get(i).getStr_Micro_Code()%></td>
                             <td class="dollar">
-                                <fmt:setLocale value = "en_US"/>
-                                <fmt:formatNumber value = "${TC_Data.jobs_1990}" type = "number"/></td>
+                                <fmt:formatNumber value = "<%=objTC_Payroll.get(i).getPayroll_1990()%>" type = "number"/></td>
                             <td class="dollar">
-                                <fmt:setLocale value = "en_US"/>
-                                <fmt:formatNumber value = "${TC_Data.jobs_2000}" type = "number"/></td>
+                                <fmt:formatNumber value = "<%=objTC_Payroll.get(i).getPayroll_2000()%>" type = "number"/></td>
                             <td class="dollar">
-                                <fmt:setLocale value = "en_US"/>
-                                <fmt:formatNumber value = "${TC_Data.jobs_2019}" type = "number"/></td>
-
+                                <fmt:formatNumber value = "<%=objTC_Payroll.get(i).getPayroll_2019()%>" type = "number"/></td>
                         </tr>
-                    </c:forEach>
-
-
+                        <%}%>
                     </tbody>
-
-
                 </table>
-               <br>
-                <br>
-                <br>
-                
-
+                <br><br><br>
             </div>
             <div>
                 <a href="excelfiles/Program_AllMicros_TotalCovered_Payroll.xlsx" download>Download</a>

@@ -38,6 +38,7 @@ public class Projections extends HttpServlet {
             HttpSession session = request.getSession();
             ArrayList onjArr = new ArrayList();
             MA_Names objMA = new MA_Names();
+            onjArr = objMA.fetchData();
             session.setAttribute("MA_Names", "");
            try{
                System.out.println("entered servlet");

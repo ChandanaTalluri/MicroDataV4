@@ -79,9 +79,9 @@ public class Micro_TC_DBA {
               objData.setStrMicro_area_name(strMicro_area_name);
               objData.setStrState_Name(strState_Name);
               objData.setStr_Micro_Code(str_Micro_Code);
-              objData.setJobs_1990(payroll_1990);
-              objData.setJobs_2000(payroll_2000);
-              objData.setJobs_2019(payroll_2019);
+              objData.setPayroll_1990(payroll_1990);
+              objData.setPayroll_2000(payroll_2000);
+              objData.setPayroll_2019(payroll_2019);
               
             objArr.add(objData);
             }
@@ -117,9 +117,9 @@ public class Micro_TC_DBA {
               objData.setStrMicro_area_name(strMicro_area_name);
               objData.setStrState_Name(strState_Name);
               objData.setStr_Micro_Code(str_Micro_Code);
-              objData.setJobs_1990(wages_1990);
-              objData.setJobs_2000(wages_2000);
-              objData.setJobs_2019(wages_2019);
+              objData.setWages_1990(wages_1990);
+              objData.setWages_2000(wages_2000);
+              objData.setWages_2019(wages_2019);
               
             objArr.add(objData);
             }

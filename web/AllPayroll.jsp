@@ -55,7 +55,7 @@ $(function(){
             <div class="col-md-8">
             <a href="TotalPayroll.jsp"><h3>Total Payroll in Microplolitian Areas</h3></a>
                 <p>
-                    Can write some story about the pittsburg data 
+                    Can write some story about the  data 
                 </p>
                 
             </div>    
@@ -66,13 +66,23 @@ $(function(){
             <div class="col-md-8">
             <a href="TotalMFGPayroll.jsp"><h3>Total Manufacturing Payroll in Microplolitian Areas</h3></a>
                 <p>
-                    Can write some story about the pittsburg data 
+                    Can write some story about the  data 
                 </p>
                 
             </div>    
         </div>
         <br>
-    
+     <div class= "row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+             <a href="All_Micro_TC_Payroll.jsp"><h3> Payroll by Micropolitan Area for 554 Micropolitan Areas</h3></a>
+                <p>
+                    Can write some story about the data 
+                </p>
+                
+            </div>    
+        </div>
+        <br>
             </c:otherwise>
         </c:choose>
         

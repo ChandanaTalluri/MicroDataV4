@@ -5,7 +5,14 @@
 --%>
 
 
+<%@page import="MicroDomain.MA_Names"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE HTML>
+<%
+ArrayList<MA_Names> objArr = new ArrayList<MA_Names>();
+MA_Names objMA = new MA_Names();
+objArr = objMA.fetchData();
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,11 +26,8 @@
         <link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
         
-        
-        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
         <style>
             #MA_NAmes {
@@ -63,11 +67,12 @@
             <div class="col-md-3"></div>
             <div class="col-md-5">
                 <h3>List of all Micropolitan Area</h3>
-              <script>
+                <br>
+                <p style ="font-family: Arial; font-size:15px;">According to 2003 definition there are 554 Micropolitan areas excluding Puerto Rico in USA</p>
+                <br>
+                <script>
                     $(document).ready(function () {
-
                         $('#MA_NAmes').DataTable({
-                            // false to disable pagination (or any other option)
                         });
                     });
 
@@ -78,17 +83,18 @@
                         <th>Micropolitan Area</th>
                         <th> State Name </th>
                     </tr>
-                    <c:forEach var="MA_Names" items="${MA_Names}">   
-
-                        <tr>
-                            <td>${MA_Names.s_no}</td>
-
-                            <td>${MA_Names.areaName}</td>
-
-                            <td>${MA_Names.stateName}</td>
-
-                        </tr>
-                    </c:forEach>
+                    
+                    <% for(int i=0;i<objArr.size();i++){ %>
+                    <tr>
+                    <td><%=objArr.get(i).getS_no()%></td>
+                    <td style="color: blue"><u><%=objArr.get(i).getAreaName()%></u></td>
+                    <td><%=objArr.get(i).getStateName()%></td>
+                    </tr>
+                    
+                    <%
+                    }
+                    %>
+                    
                 </table>
             </div>
         </div>

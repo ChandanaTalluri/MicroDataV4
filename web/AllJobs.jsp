@@ -74,13 +74,7 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-8">
 
-                    <form action="TotalCovered_MicroData" method="post">
-                        <h1><button id="jobsButton" class="btn btn-link" 
-                                    name ="Jobs" value="Jobs" 
-                                    style="font-size:28px; color:blue ">
-                                Jobs by Micropolitan Area for 554 Micropolitan Areas</button>
-                        </h1>
-                    </form>
+                    <a href="All_Micro_TC_Jobs.jsp"><h3>Jobs by Micropolitan Area for 554 Micropolitan Areas </h3></a>
                     <p style ="font-family: Arial; font-size:15px;">
                         19.0% for Job growth is observed from the year 1990-2000 and 27% from 1990-2019
 

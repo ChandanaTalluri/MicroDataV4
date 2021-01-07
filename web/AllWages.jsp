@@ -77,6 +77,17 @@
                     </div>    
                 </div>
                 <br>
+                <div class= "row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+                        <a href="All_Micro_TC_Wages.jsp"><h3> Wages by Micropolitan Area for 554 Micropolitan Areas</h3></a>
+                        <p>
+                            Can write some story about the  data 
+                        </p>
+
+                    </div>    
+                </div>
+                <br>
 
             </c:otherwise>
         </c:choose>    
