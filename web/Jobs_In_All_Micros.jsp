@@ -35,14 +35,14 @@ and open the template in the editor.
                 $("#scrolling").load("scrolling.html");
             });
         </script>
-        
+
         <br>
         <div class="container">
             <div class= "row">
                 <div class="col-md-9">
                     <h3 class="text-primary">Jobs in Micropolitan Statistical Areas</h3>
-
-                    <img src="images/snapshot for Jobs.PNG" height="300" width="700" alt="MicropolitanAreaMap">
+                   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqh86SrN6kMrwhadt9yGmdhV0j8OlwjquwjO_KbTLVTbchUd4_rufxDpNAi7VxZQ/pubhtml?widget=true&amp;headers=false"  height="600" width="1200"></iframe>
+                   
                 </div>
                 <div class="col-sm-1">
                     <a href="excelfiles/Number of Jobs by Micropolitan Area - by Industry for 2000.xlsx" download>Download</a>
@@ -50,6 +50,6 @@ and open the template in the editor.
             </div>
         </div>
 
-        
+
     </body>
 </html>
