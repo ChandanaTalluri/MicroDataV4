@@ -9,9 +9,9 @@
 <%@page import="java.util.ArrayList"%>
 <!DOCTYPE HTML>
 <%
-ArrayList<MA_Names> objArr = new ArrayList<MA_Names>();
-MA_Names objMA = new MA_Names();
-objArr = objMA.fetchData();
+    ArrayList<MA_Names> objArr = new ArrayList<MA_Names>();
+    MA_Names objMA = new MA_Names();
+    objArr = objMA.fetchData();
 %>
 <html>
     <head>
@@ -27,7 +27,7 @@ objArr = objMA.fetchData();
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-        
+
         <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
         <style>
             #MA_NAmes {
@@ -55,14 +55,31 @@ objArr = objMA.fetchData();
         </style>
     </head>
     <body>
-        <div id="nav-placeholder"></div>
+        <!--<div id="nav-placeholder"></div>-->
         <script>
             $(function () {
                 $("#nav-placeholder").load("importNavOther.html");
             });
         </script>
+        <div class= "container justify-content-center">
+
+            <div>
+                <a href="index.html">
+                    <img src="images/CollegeLogo2_1.PNG" class="img-fluid"  alt="College logo">
+                </a>
+            </div>
+
+        </div>
+
+        <nav class="nav  nav-fill  navbar-expand-lg  navbar-dark bg-dark">
+            <a class="nav-item nav-link" href="Projections.jsp">Projections</a>
+            <a class="nav-item nav-link" href="Studies.html">Studies</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link " href="contact.html">Contact US</a>
+        </nav>
 
         <br>
+
         <div class= "row">
             <div class="col-md-3"></div>
             <div class="col-md-5">
@@ -83,21 +100,21 @@ objArr = objMA.fetchData();
                         <th>Micropolitan Area</th>
                         <th> State Name </th>
                     </tr>
-                    
-                    <% for(int i=0;i<objArr.size();i++){ %>
+
+                    <% for (int i = 0; i < objArr.size(); i++) {%>
                     <tr>
-                    <td><%=objArr.get(i).getS_no()%></td>
-                    <td style="color: blue"><u><%=objArr.get(i).getAreaName()%></u></td>
-                    <td><%=objArr.get(i).getStateName()%></td>
+                        <td><%=objArr.get(i).getS_no()%></td>
+                        <td style="color: blue"><u><%=objArr.get(i).getAreaName()%></u></td>
+                        <td><%=objArr.get(i).getStateName()%></td>
                     </tr>
-                    
+
                     <%
-                    }
+                        }
                     %>
-                    
+
                 </table>
             </div>
         </div>
-         
+
     </body>
 </html>
