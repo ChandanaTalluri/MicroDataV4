@@ -83,7 +83,7 @@
         <div class= "row">
             <div class="col-md-3"></div>
             <div class="col-md-5">
-                <h3>List of all Micropolitan Area</h3>
+                <h3>List of all Micropolitan Area - 2020 Delineation</h3>
                 <br>
                 <p style ="font-family: Arial; font-size:15px;">According to 2003 definition there are 554 Micropolitan areas excluding Puerto Rico in USA</p>
                 <br>
