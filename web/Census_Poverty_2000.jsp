@@ -166,9 +166,18 @@ and open the template in the editor.
 
         <br>
         <div class="row">
+             <div class="col-md-1"></div>
+             <div class="col-md-3">
+            <h4>Poverty rate in 2000</h4>
+             </div>
+            <div class="col-md-1">
+                <a href="excelfiles/Poverty_Census 2000 MD.xlsx"  download>Download</a>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-9">
-                <h4>Poverty rate in 2000</h4>
+                
                 <br>
                 <table border="0" cellpadding="0" cellspacing="0" width="512">
                     <tbody>
@@ -3108,9 +3117,7 @@ and open the template in the editor.
 
 
             </div>
-            <div class="col-md-1">
-                <a href="excelfiles/Poverty_Census 2000 MD.xlsx"  download>Download</a>
-            </div>
+            
         </div> 
     </body>
 </html>
